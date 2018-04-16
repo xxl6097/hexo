@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c35257e4-7aca-4f87-b419-869846003fcd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/log/index.html" afterPath="$PROJECT_DIR$/log/index.html" />
       <change beforePath="$PROJECT_DIR$/public/tags/Android/index.html" afterPath="$PROJECT_DIR$/public/tags/Android/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,11 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="generate.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/hexo/lib/plugins/console/generate.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="383">
               <caret line="176" column="42" lean-forward="false" selection-start-line="176" selection-start-column="42" selection-end-line="176" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/log/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="45" column="95" lean-forward="false" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -45,6 +56,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/node_modules/hexo/lib/plugins/console/generate.js" />
+        <option value="$PROJECT_DIR$/log/index.html" />
       </list>
     </option>
   </component>
@@ -86,6 +98,11 @@
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hexo" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -124,12 +141,12 @@
       <option name="presentableId" value="Default" />
       <updated>1523414197951</updated>
       <workItem from="1523414199280" duration="1358000" />
-      <workItem from="1523856448746" duration="939000" />
+      <workItem from="1523856448746" duration="986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2297000" />
+    <option name="totallyTimeSpent" value="2344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="0" />
@@ -201,6 +218,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="176" column="42" lean-forward="false" selection-start-line="176" selection-start-column="42" selection-end-line="176" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="45" column="95" lean-forward="false" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="95" />
           <folding />
         </state>
       </provider>
