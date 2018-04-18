@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c35257e4-7aca-4f87-b419-869846003fcd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/log/assets/js/dashboard.js" afterPath="$PROJECT_DIR$/log/assets/js/dashboard.js" />
-      <change beforePath="$PROJECT_DIR$/log/clients.html" afterPath="$PROJECT_DIR$/log/clients.html" />
       <change beforePath="$PROJECT_DIR$/public/tags/Android/index.html" afterPath="$PROJECT_DIR$/public/tags/Android/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -30,21 +29,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="362" column="35" lean-forward="false" selection-start-line="362" selection-start-column="20" selection-end-line="362" selection-end-column="35" />
+            <state relative-caret-position="546">
+              <caret line="381" column="38" lean-forward="true" selection-start-line="381" selection-start-column="38" selection-end-line="381" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clients.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clients.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log/clients.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="55" column="28" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="119" />
+            <state relative-caret-position="365">
+              <caret line="54" column="52" lean-forward="false" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -94,8 +93,8 @@
         <option value="$PROJECT_DIR$/map.html" />
         <option value="$PROJECT_DIR$/log/map.html" />
         <option value="$PROJECT_DIR$/log/city.html" />
-        <option value="$PROJECT_DIR$/log/assets/js/dashboard.js" />
         <option value="$PROJECT_DIR$/log/clients.html" />
+        <option value="$PROJECT_DIR$/log/assets/js/dashboard.js" />
       </list>
     </option>
   </component>
@@ -215,12 +214,12 @@
       <workItem from="1523872672078" duration="2213000" />
       <workItem from="1523937646367" duration="3580000" />
       <workItem from="1523957387490" duration="2121000" />
-      <workItem from="1524019807837" duration="8342000" />
+      <workItem from="1524019807837" duration="8529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19395000" />
+    <option name="totallyTimeSpent" value="19582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="0" />
@@ -516,18 +515,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
+    <entry file="file://$PROJECT_DIR$/log/clients.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="362" column="35" lean-forward="false" selection-start-line="362" selection-start-column="20" selection-end-line="362" selection-end-column="35" />
+        <state relative-caret-position="365">
+          <caret line="54" column="52" lean-forward="false" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/clients.html">
+    <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="55" column="28" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="119" />
+        <state relative-caret-position="546">
+          <caret line="381" column="38" lean-forward="true" selection-start-line="381" selection-start-column="38" selection-end-line="381" selection-end-column="38" />
           <folding />
         </state>
       </provider>
