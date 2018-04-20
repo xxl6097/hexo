@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c35257e4-7aca-4f87-b419-869846003fcd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/log/assets/js/dashboard.js" afterPath="$PROJECT_DIR$/log/assets/js/dashboard.js" />
+      <change beforePath="$PROJECT_DIR$/log/sessions.html" afterPath="$PROJECT_DIR$/log/sessions.html" />
       <change beforePath="$PROJECT_DIR$/public/tags/Android/index.html" afterPath="$PROJECT_DIR$/public/tags/Android/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,17 +17,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="sessions.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sessions.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/log/sessions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="147" column="40" lean-forward="false" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
+            <state relative-caret-position="138">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -118,7 +118,6 @@
       <list>
         <option value="$PROJECT_DIR$/node_modules/hexo/lib/plugins/console/generate.js" />
         <option value="$PROJECT_DIR$/log/index.html" />
-        <option value="$PROJECT_DIR$/log/sessions.html" />
         <option value="$PROJECT_DIR$/tt.html" />
         <option value="$PROJECT_DIR$/map.html" />
         <option value="$PROJECT_DIR$/log/map.html" />
@@ -127,6 +126,7 @@
         <option value="$PROJECT_DIR$/log/111.html" />
         <option value="$PROJECT_DIR$/111.html" />
         <option value="$PROJECT_DIR$/log/assets/js/dashboard.js" />
+        <option value="$PROJECT_DIR$/log/sessions.html" />
       </list>
     </option>
   </component>
@@ -231,12 +231,12 @@
       <workItem from="1524019807837" duration="13120000" />
       <workItem from="1524212301949" duration="24000" />
       <workItem from="1524219052654" duration="25000" />
-      <workItem from="1524220967702" duration="259000" />
+      <workItem from="1524220967702" duration="471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24481000" />
+    <option name="totallyTimeSpent" value="24693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="0" />
@@ -660,18 +660,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/sessions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="147" column="40" lean-forward="false" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="598" column="25" lean-forward="false" selection-start-line="598" selection-start-column="25" selection-end-line="598" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/sessions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding />
         </state>
       </provider>
