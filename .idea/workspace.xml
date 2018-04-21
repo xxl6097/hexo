@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c35257e4-7aca-4f87-b419-869846003fcd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/log/assets/js/dashboard.js" afterPath="$PROJECT_DIR$/log/assets/js/dashboard.js" />
       <change beforePath="$PROJECT_DIR$/log/sessions.html" afterPath="$PROJECT_DIR$/log/sessions.html" />
       <change beforePath="$PROJECT_DIR$/public/tags/Android/index.html" afterPath="$PROJECT_DIR$/public/tags/Android/index.html" />
     </list>
@@ -17,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="sessions.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sessions.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log/sessions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="142" column="37" lean-forward="true" selection-start-line="142" selection-start-column="37" selection-end-line="142" selection-end-column="37" />
+            <state relative-caret-position="552">
+              <caret line="145" column="59" lean-forward="false" selection-start-line="145" selection-start-column="50" selection-end-line="145" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -30,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10879">
-              <caret line="478" column="46" lean-forward="false" selection-start-line="478" selection-start-column="46" selection-end-line="478" selection-end-column="46" />
+            <state relative-caret-position="315">
+              <caret line="420" column="24" lean-forward="false" selection-start-line="420" selection-start-column="24" selection-end-line="420" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -108,6 +109,8 @@
       <find>getlocationbyip</find>
       <find>writeCacheLog</find>
       <find>logScrollState</find>
+      <find>getFiles</find>
+      <find>delAllLog</find>
     </findStrings>
     <dirStrings>
       <dir>E:\web\hexo\node_modules\hexo</dir>
@@ -130,8 +133,8 @@
         <option value="$PROJECT_DIR$/log/clients.html" />
         <option value="$PROJECT_DIR$/log/111.html" />
         <option value="$PROJECT_DIR$/111.html" />
-        <option value="$PROJECT_DIR$/log/assets/js/dashboard.js" />
         <option value="$PROJECT_DIR$/log/sessions.html" />
+        <option value="$PROJECT_DIR$/log/assets/js/dashboard.js" />
       </list>
     </option>
   </component>
@@ -242,17 +245,18 @@
       <workItem from="1524212301949" duration="24000" />
       <workItem from="1524219052654" duration="25000" />
       <workItem from="1524220967702" duration="866000" />
-      <workItem from="1524282901317" duration="881000" />
+      <workItem from="1524282901317" duration="1108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25969000" />
+    <option name="totallyTimeSpent" value="26196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -696,22 +700,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10879">
-          <caret line="478" column="46" lean-forward="false" selection-start-line="478" selection-start-column="46" selection-end-line="478" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log/sessions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="142" column="37" lean-forward="true" selection-start-line="142" selection-start-column="37" selection-end-line="142" selection-end-column="37" />
+        <state relative-caret-position="552">
+          <caret line="145" column="59" lean-forward="false" selection-start-line="145" selection-start-column="50" selection-end-line="145" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="420" column="24" lean-forward="false" selection-start-line="420" selection-start-column="24" selection-end-line="420" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
