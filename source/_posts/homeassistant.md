@@ -59,6 +59,8 @@ Home Assistant 是一款基于 Python 的智能家居开源系统，支持众多
 ## 3.1 启用root用户（由于本人天性爱自由，所以必须要绝对权限）
 1. 设置root用户密码
 
+>sudo passwd root
+
 ```
 
     pi@raspberrypi:~$ sudo passwd root
@@ -66,6 +68,8 @@ Home Assistant 是一款基于 Python 的智能家居开源系统，支持众多
     Retype new UNIX password:  #输入第二遍密码
 ```
 2. 启用 root 账号登录
+>sudo passwd --unlock root
+
 
 ```
 
@@ -73,6 +77,8 @@ Home Assistant 是一款基于 Python 的智能家居开源系统，支持众多
     passwd: password expiry information changed.
 ```
 3. 设置root登陆
+
+>sudo nano /etc/ssh/sshd_config  
 
 ```
 
