@@ -11,7 +11,8 @@ Home Assistant 是一款基于 Python 的智能家居开源系统，支持众多
 跳出 Home Assistant 原生框架，一并纳入 Floorplan、HADashboard 等相关衍生项目；
 本文将讲述树莓派3B搭建HomeAssistant和小米设备的接入。
 <!--more-->
-### 系统要求和硬件配置
+# 系统要求和硬件配置
+---
 - 树莓派3B（Raspberry 3B）;
 - 一张16G的TF存储卡；
 - 一台电脑（windowns or mac）；
@@ -25,12 +26,14 @@ Home Assistant 是一款基于 Python 的智能家居开源系统，支持众多
 - Fing工具（Android端或者ios端都行）。
 
 # 系统安装
+---
 1. SDFormatter格式化TF存储卡
 2. 使用Win32 Disk Imager工具烧录Raspbian系统到TF卡
 3. 如果是在MacOs系统下，请用mac自带工具格式化TF卡，然后使用Etcher烧录系统；
 
 # 树莓派配置
-1. 烧录完毕后，TF卡自动命名为boot，在boot根目录新建ssh文件以便ss登录；
+---
+1. 烧录完毕后，TF卡自动命名为boot，**在boot根目录新建ssh文件以便ss登录**；
 2. 在TF卡根目录新建`wpa_supplicant.conf`文件，用于连接WiFi，配置如下：
 
     ```
@@ -50,25 +53,39 @@ Home Assistant 是一款基于 Python 的智能家居开源系统，支持众多
 
 3. 将TF卡插在树莓派后上电启动；
 4. 使用Fing查询树莓派的IP地址；
-5. 树莓派默认用户名pi，密码raspberry;
+5. 树莓派默认用户名**pi**，密码**raspberry**;
 6. 使用xshell连接树莓派，MacOs方式：`ssh pi@192.168.x.x -p 22`；
 
 ## 启用root用户（由于本人天性爱自由，所以必须要绝对权限）
 1. 设置root用户密码
+
+```
+
     pi@raspberrypi:~$ sudo passwd root
     Enter new UNIX password:   #输入第一遍密码
     Retype new UNIX password:  #输入第二遍密码
+```
 2. 启用 root 账号登录
+
+```
+
     pi@raspberrypi:~$ sudo passwd --unlock root
     passwd: password expiry information changed.
+```
 3. 设置root登陆
+
+```
+
     pi@raspberrypi:~$ sudo nano /etc/ssh/sshd_config    
+
+```
     
->Ctrl + W 快捷键 搜索 PermitRootLogin without-password
->修改 PermitRootLogin without-password 为 PermitRootLogin yes
->执行完之后，用 reboot 命令重启，这样就可以解锁root账户。
+>`Ctrl + W` 快捷键 搜索 `PermitRootLogin without-password`
+>修改 `PermitRootLogin without-password` 为 `PermitRootLogin yes`
+>执行完之后，用 `reboot` 命令重启，这样就可以解锁`root`账户。
 
 # HomeAssistant安装
+---
 ## 源替换
 
 由于默认都是从国外服务器下载安装，为了避免安装失败所以先替换成阿里的源。
@@ -77,17 +94,20 @@ Home Assistant 是一款基于 Python 的智能家居开源系统，支持众多
 
 - 复制粘贴以下内容并保存：
 
+```
+
     [global]
     trusted-host=mirrors.aliyun.com
     index-url=https://mirrors.aliyun.com/pypi/simple/
 
+```
 
 
 ## 安装Python3
 
-打开Linux系统命令行窗口，输入：`sudo apt-get install python3.5`
+打开`Linux`系统命令行窗口，输入：`sudo apt-get install python3.5`
 
-应系统要求输入root账号的密码。
+应系统要求输入`root`账号的密码。
 
 ![img1](homeassistant/1.png)
 
@@ -134,22 +154,23 @@ Home Assistant 是一款基于 Python 的智能家居开源系统，支持众多
 
 
 ## 验证安装结果
-在命令行窗口，输入：hass --debug。参数--debug可以查看启动的日志。
+在命令行窗口，输入：`hass --debug` 参数`--debug`可以查看启动的日志。
 首次启动需要初始化配置文件，也会自动下载一些所需的文件，会需要一些时间。有时因网络质量问题还会出现文件下载失败情况，导致启动过程受阻。此时可以关闭命令行窗口，再重新执行启动命令。
 
 ![img1](homeassistant/9.png)
 
-继续等待启动过程完成，直到浏览器自动打开Home Assistant系统首页，即表明软件安装成功。
+继续等待启动过程完成，直到浏览器自动打开`Home Assistant`系统首页，即表明软件安装成功。
 
 ![img1](homeassistant/10.png)
 
 
 # HomeAssistant设置自动启动
+---
 
 Home Assistant 针对树莓派的发行版（手动安装除外）中都已经自带自启任务，其余系统安装的用户需要自行配置自启。
 
 ## 配置自启动文件
-如果你未使用 Python 虚拟环境安装 Home Assistant，请使用以下方法
+如果你未使用 `Python` 虚拟环境安装 `Home Assistant`，请使用以下方法
 
     sudo nano -w /etc/systemd/system/home-assistant@root.service
 
@@ -168,7 +189,7 @@ Home Assistant 针对树莓派的发行版（手动安装除外）中都已经�
     WantedBy=multi-user.target
 
 
->注意ExecStart=/usr/local/bin/hass  这个路径使用`whereis hass`查看路径
+>注意`ExecStart=/usr/local/bin/hass`  这个路径使用`whereis hass`查看路径
 
 ## 启动自启服务
 
@@ -183,7 +204,7 @@ Home Assistant 针对树莓派的发行版（手动安装除外）中都已经�
 
 
 # HomeAssistant的一些常用命令
-
+---
 
 ## systemd相关的控制命令
 
@@ -266,20 +287,28 @@ Home Assistant 针对树莓派的发行版（手动安装除外）中都已经�
     esac
 
 
-# 小米设备接入
-- 安装米家App（最新版本获取获取不到Token，使用【[MI Home5.0.19](http://uuxia.cn:8123/file/com.xiaomi.smarthome.apk)】此版本OK）;
 
-- 使用[RE文件管理器](http://uuxia.cn:8123/file/RE.apk)，打开/data/data/com.xiaomi.smarthome/databases/miio2.db
-- 记录设备的token
+# 小米设备接入
+---
+- 安装米家App（最新版本获取获取不到`Token`，使用【[MI Home5.0.19](http://uuxia.cn:8123/file/com.xiaomi.smarthome.apk)】此版本OK）;
+
+- 使用[RE文件管理器](http://uuxia.cn:8123/file/RE.apk)，打开`/data/data/com.xiaomi.smarthome/databases/miio2.db`
+- 记录设备的`token`
 - [configuration.yaml](http://uuxia.cn:8123/file/configuration.yaml)配置文件
 
 # 遇到的一些问题
+---
 
 1. urllib3与chardet不兼容解决方案
+
+
+```
 
     pip3 uninstall urllib3
     pip3 uninstall  chardet
     ip3 install requests
+
+```
 
 
 2.执行sh ./xxx.sh出现：“Syntax error: “(” unexpected”的解决方法
