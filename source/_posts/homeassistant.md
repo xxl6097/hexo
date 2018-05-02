@@ -322,6 +322,10 @@ Home Assistant 针对树莓派的发行版（手动安装除外）中都已经�
     sudo dpkg-reconfigure dash
     在选择项中选No，搞定了！
 
+3. nodejs安装
+
+https://blog.csdn.net/xiongtm/article/details/77620005
+https://nodejs.org/dist/latest-v9.x/
 
     
 
