@@ -1,6 +1,6 @@
 ---
 title: 树莓派3B(Raspberry 3B)搭建HomeAssistant
-date: 2018-04-04 10:24:57
+date: 2018-05-02 12:14:57
 tags: [IoT,HomeAssistant]
 categories: IoT
 ---
