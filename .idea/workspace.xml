@@ -30,8 +30,8 @@
       <file leaf-file-name="raspberry.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/log/raspberry.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="437">
+              <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file leaf-file-name="sessions.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log/sessions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            <state relative-caret-position="575">
+              <caret line="52" column="30" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="52" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -243,12 +243,12 @@
       <workItem from="1524707605786" duration="305000" />
       <workItem from="1525315400586" duration="26000" />
       <workItem from="1525315620106" duration="1430000" />
-      <workItem from="1525318028532" duration="409000" />
+      <workItem from="1525318028532" duration="503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31229000" />
+    <option name="totallyTimeSpent" value="31323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="0" />
@@ -656,16 +656,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/log/sessions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state relative-caret-position="575">
+          <caret line="52" column="30" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="52" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log/raspberry.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="437">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding />
         </state>
       </provider>
