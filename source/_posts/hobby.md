@@ -6,7 +6,7 @@ categories: 生活
 ---
 业余时间做什么，决定了你的生活品质
 <!--more-->
-![avatar](/hobby/1.gif)
+![avatar](hobby/1.gif)
 
 # 摄影
 
