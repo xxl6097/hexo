@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c35257e4-7aca-4f87-b419-869846003fcd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/log/assets/js/dashboard.js" afterPath="$PROJECT_DIR$/log/assets/js/dashboard.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -232,7 +231,7 @@
       <workItem from="1526438056392" duration="43000" />
       <workItem from="1526438108500" duration="4000" />
       <workItem from="1526958841624" duration="707000" />
-      <workItem from="1526999742260" duration="782000" />
+      <workItem from="1526999742260" duration="838000" />
     </task>
     <task id="LOCAL-00001" summary="mqtt send data">
       <created>1527000203456</created>
@@ -241,11 +240,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527000203456</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mqtt send data">
+      <created>1527000540253</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527000540253</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36482000" />
+    <option name="totallyTimeSpent" value="36538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="3370" height="1458" extended-state="6" />
