@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c35257e4-7aca-4f87-b419-869846003fcd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/log/assets/js/dashboard.js" afterPath="$PROJECT_DIR$/log/assets/js/dashboard.js" />
+      <change beforePath="$PROJECT_DIR$/log/raspberry.html" afterPath="$PROJECT_DIR$/log/raspberry.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="1219" column="21" lean-forward="false" selection-start-line="1219" selection-start-column="21" selection-end-line="1219" selection-end-column="21" />
+            <state relative-caret-position="373">
+              <caret line="1212" column="0" lean-forward="true" selection-start-line="1212" selection-start-column="0" selection-end-line="1212" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="raspberry.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="raspberry.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/log/raspberry.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="11" column="92" lean-forward="false" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="92" />
+            <state relative-caret-position="447">
+              <caret line="26" column="102" lean-forward="false" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="102" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -107,8 +108,8 @@
         <option value="$PROJECT_DIR$/themes/raytaylorism/layout/_partial/footer.ejs" />
         <option value="$PROJECT_DIR$/log/sessions.html" />
         <option value="$PROJECT_DIR$/log/index.html" />
-        <option value="$PROJECT_DIR$/log/raspberry.html" />
         <option value="D:/work/github/raspberry/web/js/http.js" />
+        <option value="$PROJECT_DIR$/log/raspberry.html" />
         <option value="$PROJECT_DIR$/log/assets/js/dashboard.js" />
       </list>
     </option>
@@ -150,24 +151,6 @@
             <path>
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hexo" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hexo" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hexo" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,18 +229,17 @@
       <workItem from="1525962320819" duration="1575000" />
       <workItem from="1526438056392" duration="43000" />
       <workItem from="1526438108500" duration="4000" />
-      <workItem from="1526958841624" duration="90000" />
+      <workItem from="1526958841624" duration="707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35083000" />
+    <option name="totallyTimeSpent" value="35700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15962699" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15962699" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -645,21 +627,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/raspberry.html">
+    <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="92" lean-forward="false" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="92" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="373">
+          <caret line="1212" column="0" lean-forward="true" selection-start-line="1212" selection-start-column="0" selection-end-line="1212" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
+    <entry file="file://$PROJECT_DIR$/log/raspberry.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="1219" column="21" lean-forward="false" selection-start-line="1219" selection-start-column="21" selection-end-line="1219" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="447">
+          <caret line="26" column="102" lean-forward="false" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="102" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
