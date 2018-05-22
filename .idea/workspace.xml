@@ -20,8 +20,8 @@
       <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="1230" column="15" lean-forward="false" selection-start-line="1230" selection-start-column="15" selection-end-line="1230" selection-end-column="15" />
+            <state relative-caret-position="968">
+              <caret line="1240" column="25" lean-forward="false" selection-start-line="1240" selection-start-column="25" selection-end-line="1240" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -232,12 +232,20 @@
       <workItem from="1526438056392" duration="43000" />
       <workItem from="1526438108500" duration="4000" />
       <workItem from="1526958841624" duration="707000" />
-      <workItem from="1526999742260" duration="455000" />
+      <workItem from="1526999742260" duration="782000" />
     </task>
+    <task id="LOCAL-00001" summary="mqtt send data">
+      <created>1527000203456</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527000203456</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36155000" />
+    <option name="totallyTimeSpent" value="36482000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="3370" height="1458" extended-state="6" />
@@ -603,8 +611,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/log/assets/js/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="1230" column="15" lean-forward="false" selection-start-line="1230" selection-start-column="15" selection-end-line="1230" selection-end-column="15" />
+        <state relative-caret-position="968">
+          <caret line="1240" column="25" lean-forward="false" selection-start-line="1240" selection-start-column="25" selection-end-line="1240" selection-end-column="25" />
           <folding />
         </state>
       </provider>
