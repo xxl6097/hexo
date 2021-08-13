@@ -56,6 +56,7 @@ archive_yearly: true
 
 # 版权信息
 copyright: © 2018~2021 uuxia.top, All rights reserved.
+record: 鄂ICP备20002509号
 
 # Disqus评论shortname，若为空则不启用
 disqus_shortname:
