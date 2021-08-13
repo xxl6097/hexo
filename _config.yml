@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: uuxia的技术博客
+title: 悠悠智能
 subtitle: uuxia
 description: 在浮躁的世界安安静静地敲代码
 author: uuxia
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://uuxia.cn
+url: http://uuxia.top
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
