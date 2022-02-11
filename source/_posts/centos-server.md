@@ -270,7 +270,14 @@ sqlyog链接时出现2058异常
 
 ## 3. JDK安装配置
 
-### 下载
+
+### 方式一（推荐）
+
+    yum -y install java-1.8.0-openjdk
+
+
+### 方式二
+#### 下载
 
     https://www.oracle.com/java/technologies/downloads/#java8
 
