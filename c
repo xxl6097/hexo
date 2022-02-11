@@ -8,3 +8,7 @@ git commit -m "chg"
 git push -u origin master
 
 cp -r public/* ../xxl6097.github.io/
+
+cd ../xxl6097.github.io/
+
+./c
