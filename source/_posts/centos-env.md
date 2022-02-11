@@ -1,10 +1,4 @@
----
-title: centos服务器程序安装指南
-date: 2022-02-11 14:08:50
-tags: [centos,hexo,java,frp,nginx,mysql,gradle]
----
-
-主要记录我的centos服务器上的服务环境安装，frp、nginx配置、java程序、mysql安装、个人博客hexo。
+ntos服务器上的服务环境安装，frp、nginx配置、java程序、mysql安装、个人博客hexo。
 
 <!--more-->
 
@@ -363,11 +357,17 @@ sqlyog链接时出现2058异常
 
     官网地址：https://nodejs.org/en/download/
 
+    wget https://nodejs.org/dist/v10.24.0/node-v10.24.0-linux-x64.tar.gz
+
 #### 安装
 
-    xz -d node-v14.16.0-linux-x64.tar.xz
-    tar -xvf node-v14.16.0-linux-x64.tar
-    mv node-v14.16.0-linux-x64/ /opt/Nodejs
+    tar -xvf node-v10.24.0-linux-x64.tar.gz
+    mv node-v10.24.0-linux-x64 /opt/Nodejs
     NODE_HOME=/opt/Nodejs
     export PATH=$NODE_HOME/bin:$PATH
-    source /etc/prof
+    source /etc/profile
+
+    npm install -g hexo-cli
+
+    npm uninstall hexo-cli -g  推荐这个，成功卸载
+
