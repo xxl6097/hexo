@@ -73,7 +73,7 @@ nano /etc/nginx/nginx.conf
             }
     
             location / {
-                root /home/file/hexo/public;
+                root /home/file/xxl6097.github.io;
                 index index.html index.htm;
     #            autoindex on;
     #            autoindex_exact_size off;
