@@ -152,7 +152,7 @@ nano /etc/nginx/nginx.conf
     #
             client_max_body_size 500m;    
             location / {
-                root /home/file/hexo/public;
+                root /home/file/xxl6097.github.io;
                 index index.html index.htm;
                 #proxy_pass https://127.0.0.1:8082/;
                 #proxy_redirect https://127.0.0.1/admin https://127.0.0.1:8082/;
