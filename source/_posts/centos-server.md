@@ -1,4 +1,10 @@
-ntos服务器上的服务环境安装，frp、nginx配置、java程序、mysql安装、个人博客hexo。
+---
+title: centos服务器程序安装指南
+date: 2022-02-11 15:34:03
+tags: [centos,hexo,java,frp,nginx,mysql,gradle]
+---
+
+主要记录我的centos服务器上的服务环境安装，frp、nginx配置、java程序、mysql安装、个人博客hexo。
 
 <!--more-->
 
@@ -273,9 +279,9 @@ sqlyog链接时出现2058异常
 1. 解压 `tar -zxvf jdk-8u321-linux-x64.tar.gz`
 2. 修改环境变量 `nano /etc/profile`
 
-    export JAVA_HOME=/usr/lib/jdk1.8.0_321
-    export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-    export PATH=$PATH:$JAVA_HOME/bin
+   export JAVA_HOME=/usr/lib/jdk1.8.0_321
+   export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+   export PATH=$PATH:$JAVA_HOME/bin
 
 3. `source /etc/profile`
 
@@ -308,7 +314,7 @@ sqlyog链接时出现2058异常
 
 
 客户端配置
-    
+
     [common]
     tls_enable = true
     admin_addr = 0.0.0.0
@@ -370,4 +376,3 @@ sqlyog链接时出现2058异常
     npm install -g hexo-cli
 
     npm uninstall hexo-cli -g  推荐这个，成功卸载
-
