@@ -273,7 +273,10 @@ sqlyog链接时出现2058异常
 
 ### 方式一（推荐）
 
-    yum -y install java-1.8.0-openjdk
+    查询安装的jdk版本
+    yum -y list java*
+    安装jdk1.8
+    yum install -y java-11-openjdk.x86_64
 
 
 ### 方式二
