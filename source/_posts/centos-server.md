@@ -10,14 +10,14 @@ tags: [centos,hexo,java,frp,nginx,mysql,gradle]
 
 ## 1. nginx配置
 
-### 安装
+    安装
     yum install nginx
 
-### 配置代码
+    配置代码
 
-nano /etc/nginx/nginx.conf
+    nano /etc/nginx/nginx.conf
 
-
+---
 
     # For more information on configuration, see:
     #   * Official English Documentation: http://nginx.org/en/docs/
@@ -215,21 +215,21 @@ nano /etc/nginx/nginx.conf
 
 ## 2. mysql安装配置
 
-### 下载MySQL
+    1.下载MySQL
+    Red Hat Enterprise Linux / Oracle Linux
+    2. 选择 `Red Hat Enterprise Linux 8 / Oracle Linux 8 (x86, 64-bit), RPM Bundle
+---
+    安装
+    1. 解压 tar -xvf mysql-8.0.21-1.el7.x86_64.rpm-bundle.tar
+    2. rpm -ivh mysql-community-common-8.0.21-1.el7.x86_64.rpm --nodeps --force
+    3. rpm -ivh mysql-community-libs-8.0.11-1.el7.x86_64.rpm --nodeps --force
+    4. rpm -ivh mysql-community-client-8.0.11-1.el7.x86_64.rpm --nodeps --force
+    5. rpm -ivh mysql-community-server-8.0.11-1.el7.x86_64.rpm --nodeps --force
+    通过 rpm -qa | grep mysql 命令查看 mysql 的安装包
 
-1. 选择 `Red Hat Enterprise Linux / Oracle Linux`
-2. 选择 `Red Hat Enterprise Linux 8 / Oracle Linux 8 (x86, 64-bit), RPM Bundle`
-### 安装
-1. 解压 `tar -xvf mysql-8.0.21-1.el7.x86_64.rpm-bundle.tar`
-2. `rpm -ivh mysql-community-common-8.0.21-1.el7.x86_64.rpm --nodeps --force`
-3. `rpm -ivh mysql-community-libs-8.0.11-1.el7.x86_64.rpm --nodeps --force`
-4. `rpm -ivh mysql-community-client-8.0.11-1.el7.x86_64.rpm --nodeps --force`
-5. `rpm -ivh mysql-community-server-8.0.11-1.el7.x86_64.rpm --nodeps --force`
-6. 通过 `rpm -qa | grep mysql` 命令查看 mysql 的安装包
+---
 
-
-
-通过以下命令，完成对 mysql 数据库的初始化和相关配置
+    通过以下命令，完成对 mysql 数据库的初始化和相关配置
 
     mysqld --initialize;
     chown mysql:mysql /var/lib/mysql -R;
@@ -284,16 +284,19 @@ sqlyog链接时出现2058异常
 
     https://www.oracle.com/java/technologies/downloads/#java8
 
-选择 `jdk-8u321-linux-x64.tar.gz`
+    选择 `jdk-8u321-linux-x64.tar.gz`
 
-1. 解压 `tar -zxvf jdk-8u321-linux-x64.tar.gz`
-2. 修改环境变量 `nano /etc/profile`
+    解压 `tar -zxvf jdk-8u321-linux-x64.tar.gz`
 
-   export JAVA_HOME=/usr/lib/jdk1.8.0_321
-   export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-   export PATH=$PATH:$JAVA_HOME/bin
+---
 
-3. `source /etc/profile`
+    修改环境变量 `nano /etc/profile`
+
+    export JAVA_HOME=/usr/lib/jdk1.8.0_321
+    export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+    export PATH=$PATH:$JAVA_HOME/bin
+
+    source /etc/profile
 
 
 ## 4. gralde安装
@@ -369,13 +372,12 @@ sqlyog链接时出现2058异常
 
 ## 6. 安装Node.js
 
-#### 1 下载
+    1 下载
 
     官网地址：https://nodejs.org/en/download/
-
     wget https://nodejs.org/dist/v10.24.0/node-v10.24.0-linux-x64.tar.gz
-
-#### 安装
+---
+    安装
 
     tar -xvf node-v10.24.0-linux-x64.tar.gz
     mv node-v10.24.0-linux-x64 /opt/Nodejs
