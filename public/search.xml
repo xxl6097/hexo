@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[树莓派设置代理科学上网]]></title>
+    <url>%2F2022%2F02%2F14%2Fpi-proxy%2F</url>
+    <content type="text"><![CDATA[树莓派设置代理科学上网 设置步骤： 1. cd /etc/apt/apt.conf.d 2. sudo nano 10proxy 3. Acquire::http::Proxy &quot;http://192.168.31.53:1090&quot;; 4. reboot]]></content>
+      <tags>
+        <tag>shadowsocks</tag>
+        <tag>raspberry</tag>
+        <tag>proxy</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[git使用SSH进行无密码身份验证]]></title>
     <url>%2F2022%2F02%2F11%2Fgitssh%2F</url>
     <content type="text"><![CDATA[git使用SSH进行无密码身份验证 生成key1. ed25519方式ssh-keygen -t ed25519 -C &quot;uuxia@uuxia.cn&quot; cat ~/.ssh/id_ed25519.pub 2. rsa方式ssh-keygen -t rsa -C &quot;uuxia@uuxia.com&quot; cat ~/.ssh/id_rsa.pub 测试1. githubssh -T git@github.com 2. giteessh -T git@gitee.com 2. codingssh -T git@e.coding.net 注意在个人设置里面添加前，必须删除单独项目中添加的ssh key！！！]]></content>
