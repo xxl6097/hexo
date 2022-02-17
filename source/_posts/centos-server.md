@@ -113,6 +113,7 @@ tags: [centos,hexo,java,frp,nginx,mysql,gradle]
                 autoindex on;
                 autoindex_exact_size off;
                 autoindex_localtime on;
+                charset utf-8;
             }
             location /v1 {
                 proxy_set_header Host $host;
@@ -220,11 +221,12 @@ tags: [centos,hexo,java,frp,nginx,mysql,gradle]
     2. 选择 `Red Hat Enterprise Linux 8 / Oracle Linux 8 (x86, 64-bit), RPM Bundle
 ---
     安装
-    1. 解压 tar -xvf mysql-8.0.21-1.el7.x86_64.rpm-bundle.tar
-    2. rpm -ivh mysql-community-common-8.0.21-1.el7.x86_64.rpm --nodeps --force
-    3. rpm -ivh mysql-community-libs-8.0.11-1.el7.x86_64.rpm --nodeps --force
-    4. rpm -ivh mysql-community-client-8.0.11-1.el7.x86_64.rpm --nodeps --force
-    5. rpm -ivh mysql-community-server-8.0.11-1.el7.x86_64.rpm --nodeps --force
+    wget https://cdn.mysql.com//Downloads/MySQL-8.0/mysql-8.0.28-1.el8.x86_64.rpm-bundle.tar
+    tar -xvf mysql-8.0.28-1.el8.x86_64.rpm-bundle.tar 
+    rpm -ivh mysql-community-common-8.0.28-1.el8.x86_64.rpm --nodeps --force
+    rpm -ivh mysql-community-libs-8.0.28-1.el8.x86_64.rpm --nodeps --force
+    rpm -ivh mysql-community-client-8.0.28-1.el8.x86_64.rpm --nodeps --force
+    rpm -ivh mysql-community-server-8.0.28-1.el8.x86_64.rpm --nodeps --force
     通过 rpm -qa | grep mysql 命令查看 mysql 的安装包
 
 ---
@@ -243,6 +245,7 @@ tags: [centos,hexo,java,frp,nginx,mysql,gradle]
 通过 `mysql -uroot -p` 敲回车键进入数据库登陆界面
 
 通过 `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Xxl2475431305.';` 命令来修改密码
+`ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'Xxl2475431305.';`
 这下密码改成了 root
 
 
@@ -302,6 +305,8 @@ sqlyog链接时出现2058异常
 ## 4. gralde安装
 
     wget https://services.gradle.org/distributions/gradle-6.7-bin.zip
+
+    unzip gradle-6.7-bin.zip
     
     nano ~/.bash_profile
     
