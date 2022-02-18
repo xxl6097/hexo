@@ -393,3 +393,13 @@ sqlyog链接时出现2058异常
     npm install -g hexo-cli
 
     npm uninstall hexo-cli -g  推荐这个，成功卸载
+
+
+## 7. 页脚备案代码
+
+
+    <div style="color:#666;text-align:center;margin-top:-10px;padding-bottom:35px;">
+        <p><a style="color:#666;" text-decoration:underline;" href="http://beian.miit.gov.cn/">工业和信息化部备案管理系统网站 粤ICP备2022014941号</a></p>
+        <p>主办单位：<a style="color:#666;" text-decoration:underline;" target="_blank" href="http://uuxia.cn">悠悠科技</a></p>
+        <p>Operated by Guangzhou ChoMeng Computer System Co., Ltd.</p>
+    </div>
