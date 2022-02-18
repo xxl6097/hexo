@@ -3,7 +3,7 @@ title: Centos后台运行jar
 date: 2018-04-05 16:24:57
 tags: [Java,Jar]
 categories: 
-- [Centos, jar]
+- [Centos]
 ---
 jar后台运行
 <!--more-->

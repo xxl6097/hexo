@@ -3,7 +3,7 @@ title: 喜马拉雅WiFi音响绑定及通讯协议初稿
 date: 2016-05-11 22:54:48
 tags: [智能家居,喜马拉雅,Andorid]
 categories:
-- [IoT, 喜马拉雅]
+- [IoT]
 ---
 喜马拉雅WiFi音响绑定及通讯协议初稿
 <!--more-->

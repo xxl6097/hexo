@@ -3,7 +3,7 @@ title: CentOS下shadowsocks-libev一键安装脚本
 date: 2016-05-11 05:23:03
 tags: [shadowsocks,翻墙]
 categories:
-- [Centos, shadowsocks]
+- [VPN]
 ---
 一键安装 libev 版的 shadowsocks 最新版本。该版本的特点是内存占用小（600k左右），低 CPU 消耗，甚至可以安装在基于 OpenWRT 的路由器上。
 友情提示：如果你有问题，请先参考这篇《[Shadowsocks Troubleshooting](https://teddysun.com/399.html)》后再问。

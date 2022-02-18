@@ -3,8 +3,7 @@ title: L2TP/IPSec一键安装脚本
 date: 2018-04-02 11:04:50
 tags: [shadowsocks,翻墙]
 categories:
-- [Centos, L2TP]
-- [Centos, IPSec]
+- [VPN]
 ---
 基于 OpenVZ 虚拟化技术的 VPS 需要开启TUN/TAP才能正常使用，购买 VPS 时请先咨询服务商是否支持开启 TUN/TAP。
 

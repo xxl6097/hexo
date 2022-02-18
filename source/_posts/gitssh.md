@@ -5,7 +5,6 @@ tags: [git,github,gitee,coding]
 categories:
 - [Git, github]
 - [Git, gitee]
-- [Git, coding]
 ---
 
 git使用SSH进行无密码身份验证

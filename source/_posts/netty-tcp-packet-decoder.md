@@ -3,7 +3,7 @@ title: netty粘包断包处理
 date: 2022-02-18 13:22:58
 tags: [netty,tcp,server]
 categories: 
-- [netty, tcp]
+- [netty]
 ---
 
 基于Netty的TCP Server，处理二进制数据断包和粘包，以及tcp发送字符串的截取处理！
