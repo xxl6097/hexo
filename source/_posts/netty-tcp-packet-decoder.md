@@ -5,250 +5,61 @@ tags: [netty,tcp,server]
 categories: 
 - [netty, tcp]
 ---
-netty粘包断包处理
+
+基于Netty的TCP Server，处理二进制数据断包和粘包，以及tcp发送字符串的截取处理！
 
 <!--more-->
 
 
-引用块
-在文章中插入引言，可包含作者、来源和标题。
-
-别号： quote
-
-{% blockquote [author[, source]] [link] [source_link_title] %}
-content
-{% endblockquote %}
-样例
-没有提供参数，则只输出普通的 blockquote
-
-{% blockquote %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.
-{% endblockquote %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.
-
-引用书上的句子
-
-{% blockquote David Levithan, Wide Awake %}
-Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.
-{% endblockquote %}
-Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.
-
-David LevithanWide Awake
-引用 Twitter
-
-{% blockquote @DevDocs https://twitter.com/devdocs/status/356095192085962752 %}
-NEW: DevDocs now comes with syntax highlighting. http://devdocs.io
-{% endblockquote %}
-NEW: DevDocs now comes with syntax highlighting. http://devdocs.io
-
-@DevDocstwitter.com/devdocs/status/356095192085962752
-引用网络上的文章
-
-{% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %}
-Every interaction is both precious and an opportunity to delight.
-{% endblockquote %}
-Every interaction is both precious and an opportunity to delight.
-
-Seth GodinWelcome to Island Marketing
-代码块
-在文章中插入代码。
-
-别名： code
-
-{% codeblock [title] [lang:language] [url] [link text] [additional options] %}
-code snippet
-{% endcodeblock %}
-Specify additional options in option:value format, e.g. line_number:false first_line:5.
-
-Extra Options	Description	Default
-line_number	Show line number	true
-highlight	Enable code highlighting	true
-first_line	Specify the first line number	1
-mark	Line highlight specific line(s), each value separated by a comma. Specify number range using a dash
-Example: mark:1,4-7,10 will mark line 1, 4 to 7 and 10.
-wrap	Wrap the code block in <table>	true
-样例
-普通的代码块
-
-{% codeblock %}
-alert('Hello World!');
-{% endcodeblock %}
-alert('Hello World!');
-指定语言
-
-{% codeblock lang:objc %}
-[rectangle setX: 10 y: 10 width: 20 height: 20];
-{% endcodeblock %}
-[rectangle setX: 10 y: 10 width: 20 height: 20];
-附加说明
-
-{% codeblock Array.map %}
-array.map(callback[, thisArg])
-{% endcodeblock %}
-Array.map
-array.map(callback[, thisArg])
-附加说明和网址
-
-{% codeblock _.compact http://underscorejs.org/#compact Underscore.js %}
-_.compact([0, 1, false, 2, '', 3]);
-=> [1, 2, 3]
-{% endcodeblock %}
-_.compactUnderscore.js
-_.compact([0, 1, false, 2, '', 3]);
-=> [1, 2, 3]
-反引号代码块
-另一种形式的代码块，不同的是它使用三个反引号来包裹。
+## 一、5A协议在Netty中处理断包粘包
 
-``` [language] [title] [url] [link text] code snippet ```
-Pull Quote
-在文章中插入 Pull quote。
 
-{% pullquote [class] %}
-content
-{% endpullquote %}
-jsFiddle
-在文章中嵌入 jsFiddle。
-
-{% jsfiddle shorttag [tabs] [skin] [width] [height] %}
-Gist
-在文章中嵌入 Gist。
+       长度[2] 1  1    设备编码[8]       Mac地址[6]    帧序号[4] 保留[8]          命令字[2] Body                                                             CRC2[2]
+    5A 0042   40 00   00000199000B0301 8C18D9FFEB9D 00000046 0000000000000000 0104     0000000001000301000000000000000000000003000200000000000000000000 050B
 
-{% gist gist_id [filename] %}
-iframe
-在文章中插入 iframe。
+    说明：
+       1.长度len=0042(HEX)=66=(34+32)不包含5A;
+       2.空包长度total=35；
+       3.5A这一个子节不算在len区；
 
-{% iframe url [width] [height] %}
-Image
-在文章中插入指定大小的图片。
 
-{% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %}
-Link
-在文章中插入链接，并自动给外部链接添加 target="_blank" 属性。
+    int maxFrameLength = 65535;   （len是两个子节，所以最大长度是无符号两个子节的最大值）
+    int lengthFieldOffset = 1;    （len的索引下表是1，下表从0开始）
+    int lengthFieldLength = 2;    （len是两个子节）
+    int lengthAdjustment = -2;    （netty从len后面开始读取，5A这一子节又不再len中，len又是2子节，所以这里是-2）
+    int initialBytesToStrip = 0;  （这个0表示完整的协议内容，如果不想要5A，那么这里就是1）
 
-{% link text url [external] [title] %}
-Include Code
-插入 source/downloads/code 文件夹内的代码文件。source/downloads/code 不是固定的，取决于你在配置文件中 code_dir 的配置。
+    socketChannel.pipeline().addLast(new LengthFieldBasedFrameDecoder(maxFrameLength, lengthFieldOffset, lengthFieldLength, lengthAdjustment, initialBytesToStrip));
 
-{% include_code [title] [lang:language] [from:line] [to:line] path/to/file %}
-样例
-嵌入 test.js 文件全文
+    测试断包发送：
+    完整数据包：5A0042400000000199000B03018C18D9FFEB9D00000046000000000000000001040000000001000301000000000000000000000003000200000000000000000000050B
+    第一次发送（一包半）：5A0042400000000199000B03018C18D9FFEB9D00000046000000000000000001040000000001000301000000000000000000000003000200000000000000000000050B 5A0042400000000199000B03018C18D9FFEB9D0000004600000000000000000104
+    第二次发送（补齐后半包）：0000000001000301000000000000000000000003000200000000000000000000050B
 
-{% include_code lang:javascript test.js %}
-只嵌入第 3 行
 
-{% include_code lang:javascript from:3 to:3 test.js %}
-嵌入第 5 行至第 8 行
 
-{% include_code lang:javascript from:5 to:8 test.js %}
-嵌入第 5 行至文件结束
+## 水机    
+    
+    起始码  功能码 数据长度      Body                         CRC
+    A2      10     0E        0102030405060708091011121314 050B
 
-{% include_code lang:javascript from:5 test.js %}
-嵌入第 1 行至第 8 行
 
-{% include_code lang:javascript to:8 test.js %}
-Youtube
-在文章中插入 Youtube 视频。
+    说明：
+    1.len=0E(HEX)=14,这里的len仅仅是Body的长度，不包含head的长度;
 
-{% youtube video_id [type] [cookie] %}
-Examples
-视频
 
-{% youtube lJIrF4YjHfQ %}
-播放列表
+    lengthFieldOffset=2
+    lengthFieldLength=1
+    lengthAdjustment=2   
+    initialBytesToStrip=0
+    maxFrameLength=255
 
-{% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo 'playlist' %}
-隐私模式
 
-禁止 YouTube cookie
 
-{% youtube lJIrF4YjHfQ false %}
-{% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo 'playlist' false %}
-Vimeo
-在文章中插入 Vimeo 视频。
+https://blog.csdn.net/lzwglory/article/details/80242209
 
-{% vimeo video_id %}
-引用文章
-引用其他文章的链接。
+https://blog.csdn.net/zougen/article/details/79037675
 
-{% post_path filename %}
-{% post_link filename [title] [escape] %}
-在使用此标签时可以忽略文章文件所在的路径或者文章的永久链接信息、如语言、日期。
+https://www.jianshu.com/p/a0a51fd79f62
 
-例如，在文章中使用 {% post_link how-to-bake-a-cake %} 时，只需有一个名为 how-to-bake-a-cake.md 的文章文件即可。即使这个文件位于站点文件夹的 source/posts/2015-02-my-family-holiday 目录下、或者文章的永久链接是 2018/en/how-to-bake-a-cake，都没有影响。
-
-默认链接文字是文章的标题，你也可以自定义要显示的文本。
-
-默认对文章的标题和自定义标题里的特殊字符进行转义。可以使用escape选项，禁止对特殊字符进行转义。
-
-链接使用文章的标题
-
-{% post_link hexo-3-8-released %}
-
-Hexo 3.8.0 Released
-链接使用自定义文字
-
-{% post_link hexo-3-8-released '通往文章的链接' %}
-
-通往文章的链接
-对标题的特殊字符进行转义
-
-{% post_link hexo-4-released 'How to use <b> tag in title' %}
-How to use <b> tag in title
-禁止对标题的特殊字符进行转义
-
-{% post_link hexo-4-released '<b>bold</b> custom title' false %}
-bold custom title
-引用资源
-引用文章的资源。
-
-{% asset_path filename %}
-{% asset_img [class names] slug [width] [height] [title text [alt text]] %}
-{% asset_link filename [title] [escape] %}
-Embed image
-hexo-renderer-marked 3.1.0+ can (optionally) resolves the post’s path of an image automatically, refer to this section on how to enable it.
-
-“foo.jpg” is located at http://example.com/2020/01/02/hello/foo.jpg.
-
-Default (no option)
-
-{% asset_img foo.jpg %}
-
-<img src="/2020/01/02/hello/foo.jpg">
-Custom class
-
-{% asset_img post-image foo.jpg %}
-
-<img src="/2020/01/02/hello/foo.jpg" class="post-image">
-Display size
-
-{% asset_img foo.jpg 500 400 %}
-
-<img src="/2020/01/02/hello/foo.jpg" width="500" height="400">
-Title & Alt
-
-{% asset_img logo.svg "lorem ipsum'dolor'" %}
-
-<img src="/2020/01/02/hello/foo.jpg" title="lorem ipsum" alt="dolor">
-Raw
-如果您想在文章中插入 Swig 标签，可以尝试使用 Raw 标签，以免发生解析异常。
-
-{% raw %}
-content
-{% endraw %}
-文章摘要和截断
-在文章中使用 <!-- more -->，那么 <!-- more --> 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。
-
-例如：
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<!-- more -->
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-首页中将只会出现
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-正文中则会出现
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-注意，摘要可能会被 Front Matter 中的 excerpt 覆盖。
+https://www.cnblogs.com/workharder/p/12325908.html
