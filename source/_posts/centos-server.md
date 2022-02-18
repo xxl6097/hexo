@@ -11,14 +11,17 @@ categories: 服务器配置
 
 ## 1. nginx配置
 
+```
     安装
     yum install nginx
 
     配置代码
 
     nano /etc/nginx/nginx.conf
+```
 
----
+
+
 
 
 #### nginx.conf
