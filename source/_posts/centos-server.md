@@ -20,199 +20,269 @@ categories: 服务器配置
 
 ---
 
-    # For more information on configuration, see:
-    #   * Official English Documentation: http://nginx.org/en/docs/
-    #   * Official Russian Documentation: http://nginx.org/ru/docs/
-    
-    user root;
-    worker_processes auto;
-    error_log /var/log/nginx/error.log;
-    pid /run/nginx.pid;
-    
-    # Load dynamic modules. See /usr/share/doc/nginx/README.dynamic.
-    include /usr/share/nginx/modules/*.conf;
-    
-    events {
-    worker_connections 1024;
-    }
-    
-    http {
-    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
-    '$status $body_bytes_sent "$http_referer" '
-    '"$http_user_agent" "$http_x_forwarded_for"';
-    
-        access_log  /var/log/nginx/access.log  main;
-    
-        sendfile            on;
-        tcp_nopush          on;
-        tcp_nodelay         on;
-        keepalive_timeout   65;
-        types_hash_max_size 2048;
-        client_max_body_size 500m;
-        include             /etc/nginx/mime.types;
-        default_type        application/octet-stream;
-    
-        # Load modular configuration files from the /etc/nginx/conf.d directory.
-        # See http://nginx.org/en/docs/ngx_core_module.html#include
-        # for more information.
-        include /etc/nginx/conf.d/*.conf;
-    
-        server {
-            listen       80 default_server;
-            listen       [::]:80 default_server;
-            server_name  localhost;
-           # root          /root/xxl6097.github.io
-            root         /usr/share/nginx/html;
-    
-            # Load configuration files for the default server block.
-            include /etc/nginx/default.d/*.conf;
-    
-            location ^~ /frp_server_web/{
-                proxy_set_header X-Real-IP $remote_addr;
-                proxy_set_header Host $http_host;
-                proxy_pass http://127.0.0.1:9090;
-            }
-    
-            location / {
-                root /home/file/xxl6097.github.io;
-                index index.html index.htm;
-    #            autoindex on;
-    #            autoindex_exact_size off;
-    #            autoindex_localtime on;
-            }
-            location /websocket{
-                proxy_pass https://127.0.0.1:8082;
-                proxy_http_version 1.1;
-                proxy_set_header Upgrade $http_upgrade;
-                proxy_set_header Connection "upgrade";
-                proxy_read_timeout 3600s;
-            }
-            location /admin/ {
-               index index.html index.htm;
-               proxy_set_header Host $host;
-               proxy_pass https://127.0.0.1:8082/;
-               proxy_set_header Upgrade $http_upgrade;
-               proxy_http_version 1.1;
-               proxy_set_header Connection "upgrade";
-               proxy_redirect https://127.0.0.1/admin https://127.0.0.1:8080/;
-           }
-           
-    
-           location ~* ^(/v2|/webjars|/swagger-resources|/swagger-ui.html){
-             proxy_set_header Host $host;
-             proxy_set_header  X-Real-IP  $remote_addr;
-               proxy_set_header X-Forwarded-For $remote_addr;
-             #proxy_set_header Host $host:$server_port;
-             proxy_set_header X-Forwarded-Proto $scheme;
-             proxy_set_header X-Forwarded-Port $server_port;
-             proxy_pass https://127.0.0.1:8082; # 后端服务地址
-           }
-    
-            location /file{
-    #            add_header Content-Disposition "attachment;";
-                alias /home/file;
-                autoindex on;
-                autoindex_exact_size off;
-                autoindex_localtime on;
-                charset utf-8;
-            }
-            location /v1 {
-                proxy_set_header Host $host;
-                add_header 'Access-Control-Allow-Origin' '*';
-                add_header 'Access-Control-Allow-Headers' 'X-Requested-With';
-                add_header 'Access-Control-Allow-Methods' 'GET,POST,OPTIONS';
-                proxy_pass https://127.0.0.1:8082;
-            }
-    
-            error_page 404 /404.html;
-                location = /40x.html {
-            }
-    
-            error_page 500 502 503 504 /50x.html;
-                location = /50x.html {
-            }
+
+#### nginx.conf
+
+
+```
+
+user root;
+worker_processes auto;
+error_log /var/log/nginx/error.log;
+pid /run/nginx.pid;
+
+
+include /usr/share/nginx/modules/*.conf;
+
+events {
+worker_connections 1024;
+}
+
+http {
+log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+'$status $body_bytes_sent "$http_referer" '
+'"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile            on;
+    tcp_nopush          on;
+    tcp_nodelay         on;
+    keepalive_timeout   65;
+    types_hash_max_size 2048;
+    client_max_body_size 500m;
+    include             /etc/nginx/mime.types;
+    default_type        application/octet-stream;
+
+    include /etc/nginx/conf.d/*.conf;
+
+
+
+}
+
+```
+
+#### admin.conf
+
+```
+server {
+        listen       80;
+        server_name  admin.uuxia.cn;
+        
+        location / {
+           index index.html index.htm;
+           proxy_set_header Host $host;
+           proxy_pass https://127.0.0.1:8082/;
+           proxy_set_header Upgrade $http_upgrade;
+           proxy_http_version 1.1;
+           proxy_set_header Connection "upgrade";
+           proxy_redirect https://127.0.0.1/admin https://127.0.0.1:8080/;
+       }
+       
+}
+
+```
+
+#### file.conf
+
+```
+autoindex on;# 显示目录
+autoindex_exact_size off;# 显示文件大小
+autoindex_localtime on;# 显示文件时间
+server {
+        listen       80;
+        server_name  file.uuxia.cn;
+
+        charset gbk,utf-8;
+        
+
+        location / {
+            root /home/;
+            index  index.html index.htm;
+            charset utf-8;
         }
+
+ }
+```
+
+
+#### cloud.conf
     
-    # Settings for a TLS enabled server.
-    #
-        server {
-            listen       443 ssl http2 default_server;
-            listen       [::]:443 ssl http2 default_server;
-            server_name  localhost;
-            root         /usr/share/nginx/html;
-            ssl_certificate "/etc/pki/nginx/server.crt";
-            ssl_certificate_key "/etc/pki/nginx/private/server.key";
-            ssl_session_cache shared:SSL:1m;
-            ssl_session_timeout  10m;
-            ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-            ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
-            #ssl_ciphers PROFILE=SYSTEM;
-            ssl_prefer_server_ciphers on;
-    #
-    #        # Load configuration files for the default server block.
-            include /etc/nginx/default.d/*.conf;
-    #
-            client_max_body_size 500m;    
-            location / {
-                root /home/file/xxl6097.github.io;
-                index index.html index.htm;
-                #proxy_pass https://127.0.0.1:8082/;
-                #proxy_redirect https://127.0.0.1/admin https://127.0.0.1:8082/;
-            }
-            location /v1 {
-                proxy_set_header Host $host;
-                add_header 'Access-Control-Allow-Origin' '*';
-                add_header 'Access-Control-Allow-Headers' 'X-Requested-With';
-                add_header 'Access-Control-Allow-Methods' 'GET,POST,OPTIONS';
-                proxy_pass https://127.0.0.1:8082;
-            }
-            location /admin/ {
-               index index.html index.htm;
-               proxy_set_header Host $host;
-               proxy_pass https://127.0.0.1:8082/;
-               proxy_set_header Upgrade $http_upgrade;
-               proxy_http_version 1.1;
-               proxy_set_header Connection "upgrade";
-               proxy_redirect https://127.0.0.1/admin https://127.0.0.1:8080/;
-           }
-           
-    
-           location ~* ^(/v2|/webjars|/swagger-resources|/swagger-ui.html){
-             proxy_set_header Host $host;
-             proxy_set_header  X-Real-IP  $remote_addr;
-               proxy_set_header X-Forwarded-For $remote_addr;
-             #proxy_set_header Host $host:$server_port;
-             proxy_set_header X-Forwarded-Proto $scheme;
-             proxy_set_header X-Forwarded-Port $server_port;
-             proxy_pass https://127.0.0.1:8082; # 后端服务地址
-           }
-    
-            location /websocket{
-                proxy_pass https://127.0.0.1:8082;
-                proxy_http_version 1.1;
-                proxy_set_header Upgrade $http_upgrade;
-                proxy_set_header Connection "upgrade";
-                proxy_read_timeout 3600s;
-            }
-    
-            location /file{
-                alias /home/file;
-                autoindex on;
-                autoindex_exact_size off;
-                autoindex_localtime on;
-            }
-    #
-            error_page 404 /404.html;
-                location = /40x.html {
-            }
-    #
-            error_page 500 502 503 504 /50x.html;
-                location = /50x.html {
-            }
+```
+server {
+        listen       80 default_server;
+        server_name  cloud.uuxia.cn;
+
+        location / {
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header Host $http_host;
+            proxy_redirect off;
+            proxy_pass http://127.0.0.1:5212;
+
+            # 如果您要使用本地存储策略，请将下一行注释符删除，并更改大小为理论最大文件尺寸
+            # client_max_body_size 20000m;
         }
-    
     }
 
+```
+
+#### java.conf
+
+```
+
+
+server {
+        listen       80;
+        #listen       [::]:80 default_server;
+        server_name  uuxia.cn;
+        #root         /usr/share/nginx/html;
+        #charset gbk,utf-8;
+#        charset utf-8;
+        location ^~ /frp_server_web/{
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header Host $http_host;
+            proxy_pass http://127.0.0.1:9090;
+        }
+
+        location / {
+            root /home/file/xxl6097.github.io;
+            index index.html index.htm;
+            charset utf-8;
+        }
+        location /file {
+            alias /home/file;
+            autoindex on;
+            autoindex_exact_size off;
+            autoindex_localtime on;
+            charset utf-8;
+        }
+
+        location /websocket{
+            proxy_pass https://127.0.0.1:8082;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "upgrade";
+            proxy_read_timeout 3600s;
+        }
+        location /admin/ {
+           index index.html index.htm;
+           proxy_set_header Host $host;
+           proxy_pass https://127.0.0.1:8082/;
+           proxy_set_header Upgrade $http_upgrade;
+           proxy_http_version 1.1;
+           proxy_set_header Connection "upgrade";
+           proxy_redirect https://127.0.0.1/admin https://127.0.0.1:8080/;
+       }
+       
+
+       location ~* ^(/v2|/webjars|/swagger-resources|/swagger-ui.html){
+         proxy_set_header Host $host;
+         proxy_set_header  X-Real-IP  $remote_addr;
+           proxy_set_header X-Forwarded-For $remote_addr;
+         #proxy_set_header Host $host:$server_port;
+         proxy_set_header X-Forwarded-Proto $scheme;
+         proxy_set_header X-Forwarded-Port $server_port;
+         proxy_pass https://127.0.0.1:8082; # 后端服务地址
+       }
+
+       location /v1 {
+         proxy_set_header Host $host;
+         add_header 'Access-Control-Allow-Origin' '*';
+         add_header 'Access-Control-Allow-Headers' 'X-Requested-With';
+         add_header 'Access-Control-Allow-Methods' 'GET,POST,OPTIONS';
+         proxy_pass https://127.0.0.1:8082;
+        }
+
+        error_page 404 /404.html;
+            location = /40x.html {
+        }
+
+        error_page 500 502 503 504 /50x.html;
+            location = /50x.html {
+        }
+    }
+
+# Settings for a TLS enabled server.
+#
+    server {
+        listen       443 ssl http2 default_server;
+       # listen       [::]:443 ssl http2 default_server;
+        server_name  uuxia.cn;
+       # root         /usr/share/nginx/html;
+        ssl_certificate "/etc/pki/nginx/server.crt";
+        ssl_certificate_key "/etc/pki/nginx/private/server.key";
+        ssl_session_cache shared:SSL:1m;
+        ssl_session_timeout  10m;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
+        #ssl_ciphers PROFILE=SYSTEM;
+        ssl_prefer_server_ciphers on;
+#        charset gbk,utf-8;
+
+
+        client_max_body_size 500m;    
+        location / {
+            root /home/file/xxl6097.github.io;
+            index index.html index.htm;
+            #proxy_pass https://127.0.0.1:8082/;
+            #proxy_redirect https://127.0.0.1/admin https://127.0.0.1:8082/;
+            charset utf-8;
+        }
+        location /file {
+            alias /home/file;
+            autoindex on;
+            autoindex_exact_size off;
+            autoindex_localtime on;
+            charset utf-8;
+        }
+
+        location /v1 {
+            proxy_set_header Host $host;
+            add_header 'Access-Control-Allow-Origin' '*';
+            add_header 'Access-Control-Allow-Headers' 'X-Requested-With';
+            add_header 'Access-Control-Allow-Methods' 'GET,POST,OPTIONS';
+            proxy_pass https://127.0.0.1:8082;
+        }
+        location /admin/ {
+           index index.html index.htm;
+           proxy_set_header Host $host;
+           proxy_pass https://127.0.0.1:8082/;
+           proxy_set_header Upgrade $http_upgrade;
+           proxy_http_version 1.1;
+           proxy_set_header Connection "upgrade";
+           proxy_redirect https://127.0.0.1/admin https://127.0.0.1:8080/;
+       }
+       
+
+       location ~* ^(/v2|/webjars|/swagger-resources|/swagger-ui.html){
+         proxy_set_header Host $host;
+         proxy_set_header  X-Real-IP  $remote_addr;
+           proxy_set_header X-Forwarded-For $remote_addr;
+         #proxy_set_header Host $host:$server_port;
+         proxy_set_header X-Forwarded-Proto $scheme;
+         proxy_set_header X-Forwarded-Port $server_port;
+         proxy_pass https://127.0.0.1:8082; # 后端服务地址
+       }
+
+        location /websocket{
+            proxy_pass https://127.0.0.1:8082;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "upgrade";
+            proxy_read_timeout 3600s;
+        }
+
+        error_page 404 /404.html;
+            location = /40x.html {
+        }
+#
+        error_page 500 502 503 504 /50x.html;
+            location = /50x.html {
+        }
+    }
+
+
+```
 
 
 ## 2. mysql安装配置
