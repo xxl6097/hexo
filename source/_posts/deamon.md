@@ -2,7 +2,8 @@
 title: Android孤儿进程防止清理
 date: 2016-05-09 01:47:57
 tags: [Android,Service]
-categories: Service
+categories: 
+- [Android, Service]
 ---
 孤儿进程:因为父进程先退出而导致一个子进程被init进程收养的进程为孤儿进程
 <!--more-->

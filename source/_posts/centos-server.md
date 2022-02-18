@@ -2,7 +2,12 @@
 title: centos服务器程序安装指南
 date: 2022-02-11 15:34:03
 tags: [centos,hexo,java,frp,nginx,mysql,gradle]
-categories: 服务器配置
+categories: 
+- [Centos, java]
+- [Centos, frp]
+- [Centos, nginx]
+- [Centos, mysql]
+- [Centos, gradle]
 ---
 
 主要记录我的centos服务器上的服务环境安装，frp、nginx配置、java程序、mysql安装、个人博客hexo。

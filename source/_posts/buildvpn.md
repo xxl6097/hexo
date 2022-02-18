@@ -2,7 +2,8 @@
 title: 搬瓦工（bandwagon）搭建VPN
 date: 2016-05-09 05:59:13
 tags: [vpn,shadowsocks]
-categories: vpn
+categories: 
+- [Centos, vpn]
 ---
 最近注册了一个搬瓦工，开始只为了翻墙，方便查资料和上网。后来发现了搬瓦工功能还比较强大，一年19美元10G流量（搬瓦工：[https://bandwagonhost.com/](https://bandwagonhost.com/)），我目前配合了shadowsocks使用，ios用的surge，by the way，surge相当的强大，搬瓦工还可以搭件个人网站。关于搬瓦工的注册，在这里就不再阐述了，很简单，百度google都有，好了，下面开工，搭建VPN吧。
 <!--more-->

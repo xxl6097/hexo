@@ -2,7 +2,8 @@
 title: 树莓派3B(Raspberry 3B)搭建HomeAssistant
 date: 2018-05-02 12:14:57
 tags: [IoT,HomeAssistant]
-categories: IoT
+categories:
+- [IoT, HomeAssistant]
 ---
 Home Assistant 是一款基于 Python 的智能家居开源系统，支持众多品牌的智能家居设备，可以轻松实现设备的语音控制、自动化等。本文档全站内容基于 Home Assistant 官方网站 本地化而成，具有以下特点：
 

@@ -2,7 +2,8 @@
 title: ios开发笔记
 date: 2016-05-10 03:24:00
 tags: [ios]
-categories: ios
+categories:
+- [Ios, 开发]
 
 ---
 http://www.williamlong.info/archives/4319.html
