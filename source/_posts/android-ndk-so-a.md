@@ -3,7 +3,7 @@ title: Android导入第三方静态库.a编译成动态库.so
 date: 2016-05-11 23:08:51
 tags: [Andorid,ndk,so,a]
 categories: 
-- [Andorid]
+- [Android]
 ---
 Android导入第三方静态库.a编译成动态库.so
 <!--more-->
