@@ -7,10 +7,10 @@ raytaylorism（Ray Taylor主义）是我自己设计并制作的一款清新的�
 ## 预览
 
 * [我的博客]
-* [主题截图1](http://raytaylorlin-blog.qiniudn.com/image%2Fscreenshot%2Fscreenshot1.jpg)
-* [主题截图2](http://raytaylorlin-blog.qiniudn.com/image%2Fscreenshot%2Fscreenshot2.jpg)
-* [主题截图3](http://raytaylorlin-blog.qiniudn.com/image%2Fscreenshot%2Fscreenshot3.jpg)
-* [主题截图4](http://raytaylorlin-blog.qiniudn.com/image%2Fscreenshot%2Fscreenshot4.jpg)
+* [主题截图1](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fscreenshot%2Fscreenshot1.jpg)
+* [主题截图2](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fscreenshot%2Fscreenshot2.jpg)
+* [主题截图3](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fscreenshot%2Fscreenshot3.jpg)
+* [主题截图4](https://raytaylorlin-blog.oss-cn-shenzhen.aliyuncs.com/image%2Fscreenshot%2Fscreenshot4.jpg)
 
 ## 安装
 
@@ -107,17 +107,10 @@ search:
 * 2.1.0(2016-3-28) 增加对繁体中文和英文的支持
 * 2.0.0-alpha(2016-3-14) 发布raytaylorism v2 alpha版本
 
-
-
-## uuxia更新记录
-* \raytaylorism\source\css\_base\lib_customize.styl 新增line 15~21
-* \raytaylorism\layout\post.ejs 修改第2行
-* \raytaylorism\source\css\_partial\tablecontents.styl 第5行 50%改成70%
-
 [历史记录](log.md)
 
 [Hexo]: http://hexo.io/
-[我的博客]: http://raytaylorlin.com/
+[我的博客]: https://raytaylorlin.github.io/
 [Data Files]: https://hexo.io/docs/data-files.html
 [Materializecss色板]: http://materializecss.com/color.html#palette
 [Font Awesome图标]: https://fortawesome.github.io/Font-Awesome/icons/

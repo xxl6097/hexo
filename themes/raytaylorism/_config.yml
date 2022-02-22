@@ -51,23 +51,22 @@ color:
   about_header: indigo
   about_title: indigo
 
-excerpt_link: 阅读全文
 archive_yearly: true
 
 # 版权信息
-copyright: © 2018~2021 uuxia.top, All rights reserved.
+copyright: © 2016 example.com, All rights reserved.
 
 # Disqus评论shortname，若为空则不启用
 disqus_shortname:
 # 多说shortname，若为空则不启用
-duoshuo_shortname: uuxia
+duoshuo_shortname:
 # 网易云跟帖productKey，从通用代码中获取，若为空则不启用
 yungentie_product_key:
 
 # Google分析track id，若为空则不启用
 google_analytics:
 # 腾讯分析sId，若为空则不启用
-tencent_analytics: 56133145
+tencent_analytics:
 
 # 高亮的主题，若为空则使用默认主题
 google_code_prettify: prettify-tomorrow-night-eighties
