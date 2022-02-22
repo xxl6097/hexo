@@ -1,14 +1,17 @@
-git pull 
+echo "git pull"
+git pull
 echo "hexo running"
 hexo clean
 hexo g
 hexo d
-git add .
-git commit -m "chg"
-git push -u origin master
+chmod +x gitcommit.sh
+./gitcommit.sh
 
 cp -r public/* ../xxl6097.github.io/
+cp -r gitcommit.sh ../xxl6097.github.io/
 
 cd ../xxl6097.github.io/
 
-./c
+chmod +x gitcommit.sh
+./gitcommit.sh
+
