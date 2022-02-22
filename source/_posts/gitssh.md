@@ -4,7 +4,6 @@ date: 2022-02-11 17:23:20
 tags: [git,github,gitee,coding]
 categories:
 - [Git, github]
-- [Git, gitee]
 ---
 
 git使用SSH进行无密码身份验证
@@ -15,20 +14,22 @@ git使用SSH进行无密码身份验证
 #### ed25519方式
 
 ```
-
 ssh-keygen -t ed25519 -C "uuxia@uuxia.cn"
 cat ~/.ssh/id_ed25519.pub
-
 ```
 
 #### rsa方式
+
 ```
 ssh-keygen -t rsa -C "uuxia@uuxia.com"
 cat ~/.ssh/id_rsa.pub
 ```
 
-## 二、测试
 ---
+
+## 二、测试
+
+
 #### 测试github服务器
 ```
 ssh -T git@github.com
