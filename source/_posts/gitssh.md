@@ -23,23 +23,23 @@ cat ~/.ssh/id_ed25519.pub
 
 #### 2. rsa方式
 ```
-    ssh-keygen -t rsa -C "uuxia@uuxia.com"
-    cat ~/.ssh/id_rsa.pub
+ssh-keygen -t rsa -C "uuxia@uuxia.com"
+cat ~/.ssh/id_rsa.pub
 ```
 
 ## 二、测试
 ---
 #### 1. 测试github服务器
 ```
-    ssh -T git@github.com
+ssh -T git@github.com
 ```
 #### 2. 测试gitee服务器
 ```
-    ssh -T git@gitee.com
+ssh -T git@gitee.com
 ```
 #### 2. 测试coding服务
 ```
-    ssh -T git@e.coding.net
+ssh -T git@e.coding.net
 ```
 
 ## 注意
