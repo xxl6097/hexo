@@ -608,8 +608,8 @@ categories:
 # **绑定流程**
 
 
-![这里写图片描述](hobby/bind.jpg)
-***[点击看大图](hobby/bind.jpg)***
+![这里写图片描述](ximalaya/bind.jpg)
+***[点击看大图](ximalaya/bind.jpg)***
 
 
 
