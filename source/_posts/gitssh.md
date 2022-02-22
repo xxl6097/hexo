@@ -10,33 +10,37 @@ categories:
 git使用SSH进行无密码身份验证
 <!--more-->
 
-## 生成key
+## 一、生成key
 ---
 #### 1. ed25519方式
 
-    ssh-keygen -t ed25519 -C "uuxia@uuxia.cn"
-    cat ~/.ssh/id_ed25519.pub
+```
+
+ssh-keygen -t ed25519 -C "uuxia@uuxia.cn"
+cat ~/.ssh/id_ed25519.pub
+
+```
 
 #### 2. rsa方式
-
+```
     ssh-keygen -t rsa -C "uuxia@uuxia.com"
     cat ~/.ssh/id_rsa.pub
+```
 
-
-## 测试
+## 二、测试
 ---
-#### 1. github
-
+#### 1. 测试github服务器
+```
     ssh -T git@github.com
-
-#### 2. gitee
-
+```
+#### 2. 测试gitee服务器
+```
     ssh -T git@gitee.com
-
-#### 2. coding
-
+```
+#### 2. 测试coding服务
+```
     ssh -T git@e.coding.net
-
+```
 
 ## 注意
 ---
