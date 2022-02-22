@@ -287,7 +287,7 @@ server {
 
 ```
 
-
+---
 ## 2. mysql安装配置
 
     1.下载MySQL
@@ -344,7 +344,7 @@ sqlyog链接时出现2058异常
 
 `ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'Xxl2475431305.';`
 
-
+---
 ## 3. JDK安装配置
 
 
@@ -375,7 +375,7 @@ sqlyog链接时出现2058异常
 
     source /etc/profile
 
-
+---
 ## 4. gralde安装
 
     wget https://services.gradle.org/distributions/gradle-6.7-bin.zip
@@ -389,7 +389,7 @@ sqlyog链接时出现2058异常
     source ~/.bash_profile
 
 
-
+---
 ## 5. 安装frps安装
 
 服务端配置
@@ -448,7 +448,7 @@ sqlyog链接时出现2058异常
     local_port = 22
     remote_port = 7003
 
-
+---
 ## 6. 安装Node.js
 
     1 下载
