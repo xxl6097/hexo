@@ -1,5 +1,5 @@
 {
-    "avatar": "http://uuxia.top/file/hexo/image/icon.png",
+    "avatar": "http://uuxia.cn/image/icon.png",
     "name": "你的大名",
     "tag": "Web前端/Android/Java/C++/技术宅",
     "desc": "在浮躁的世界安安静静地敲代码",
@@ -34,7 +34,7 @@
         }
     ],
     "reward": [
-        "http://uuxia.top/file/hexo/image/wechat.png",
-        "http://uuxia.top/file/hexo/image/alipay.png"
+        "http://uuxia.cn/image/wechat.png",
+        "http://uuxia.cn/image/alipay.png"
     ]
 }
