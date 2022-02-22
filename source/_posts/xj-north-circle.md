@@ -9,7 +9,7 @@ categories:
 
 
 #### 行程速览
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/5ed7f95601f549cdef33254e90856572?showdoc=.jpg)
+![](xj-north-circle/xj-todo-list.png)
 
 
 
@@ -31,7 +31,7 @@ categories:
 4. 找超市备货；
 5. 预定好下一站可可托海的住宿；
 
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/b0b789614aa719376d40ffaa56f69308?showdoc=.jpg)
+![](xj-north-circle/xj-jipiao.jpeg)
 
 
 ##### 注意事项：
@@ -50,7 +50,7 @@ categories:
 2. 区间测速80km；
 3. [行车路线](https://www.amap.com/dir?from%5Bid%5D=B03DF0668Z-to&from%5Bname%5D=%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E5%9C%B0%E7%AA%9D%E5%A0%A1%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&from%5Blnglat%5D=87.479742%2C43.905808&from%5Bmodxy%5D=87.478441%2C43.902829&from%5Bpoitype%5D=150104&from%5Badcode%5D=650104&to%5Badcode%5D=654322&to%5Bname%5D=%E5%8F%AF%E5%8F%AF%E6%89%98%E6%B5%B7%E9%95%87&to%5Bid%5D=B038A0LO1U&to%5Bpoitype%5D=190106&to%5Blnglat%5D=89.81118900000001%2C47.221611&to%5Bmodxy%5D=&type=car&policy=1 "行车路线")
 
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/0aac80b0878a1218120f87cdc4e7e1b0?showdoc=.jpg)
+![](xj-north-circle/xj-img1.png)
 
 ---
 
@@ -81,8 +81,8 @@ categories:
 3. <font color='red'>富蕴县-布尔津 全程国道，有测速，而且还有流动测速（路边放个临时测速器，CT就停在暗处）</font>；
 4. [行车路线](https://www.amap.com/dir?from%5Badcode%5D=654322&from%5Bname%5D=%E5%8F%AF%E5%8F%AF%E6%89%98%E6%B5%B7%E9%95%87&from%5Bid%5D=B038A0LO1U-from&from%5Bpoitype%5D=190106&from%5Blnglat%5D=89.81118900000001%2C47.221611&from%5Bmodxy%5D=&to%5Bid%5D=B038A0LR4U&to%5Bname%5D=%E5%B8%83%E5%B0%94%E6%B4%A5%E5%8E%BF&to%5Blnglat%5D=86.874897%2C47.701850&to%5Bmodxy%5D=86.874897%2C47.701850&to%5Bpoitype%5D=190105&to%5Badcode%5D=654321&type=car&policy=1 "行车路线")
 
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/c429dabe3008e3ac51524750bf1f5c34?showdoc=.jpg)
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/402e3db73fe269e0eb0e1aca39147ed3?showdoc=.jpg)
+![](xj-north-circle/xj-img2.png)
+![](xj-north-circle/xj-img3.png)
 
 ---
 
@@ -110,8 +110,10 @@ categories:
 2. 全程区县测速限速：60km；
 3. 去程走大路，返程走小路；
 4. [行车路线](https://www.amap.com/dir?from%5Bid%5D=B038A0LR4U-from&from%5Bname%5D=%E5%B8%83%E5%B0%94%E6%B4%A5%E5%8E%BF&from%5Blnglat%5D=86.874897%2C47.701850&from%5Bmodxy%5D=86.874897%2C47.701850&from%5Bpoitype%5D=190105&from%5Badcode%5D=654321&to%5Bid%5D=B0FFL2UMIZ&to%5Bname%5D=%E8%B4%BE%E7%99%BB%E5%B3%AA%E9%97%A8%E7%A5%A8%E7%AB%99&to%5Blnglat%5D=87.130721%2C48.507338&to%5Bmodxy%5D=87.130721%2C48.507338&to%5Bpoitype%5D=070000&to%5Badcode%5D=654321&type=car&policy=1 "行车路线")
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/8911be7ee4c47536a80d51eccb3d2072?showdoc=.jpg)
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/f5ef134535659a375e1621ea51b21750?showdoc=.jpg)
+
+
+![](xj-north-circle/xj-img4.png)
+![](xj-north-circle/xj-img5.png)
 
 ---
 
@@ -133,8 +135,9 @@ categories:
 1. 距离70KM，2个半小时车程；
 2. [行车路线](https://www.amap.com/dir?from%5Bid%5D=B0FFL2UMIZ-from&from%5Bname%5D=%E8%B4%BE%E7%99%BB%E5%B3%AA%E9%97%A8%E7%A5%A8%E7%AB%99&from%5Blnglat%5D=87.130721%2C48.507338&from%5Bmodxy%5D=87.130721%2C48.507338&from%5Bpoitype%5D=070000&from%5Badcode%5D=654321&to%5Bid%5D=B0FFIPUO59&to%5Bname%5D=%E7%A6%BE%E6%9C%A8%E6%9D%91&to%5Blnglat%5D=87.432910%2C48.568561&to%5Bmodxy%5D=87.432910%2C48.568561&to%5Bpoitype%5D=190108&to%5Badcode%5D=654321&type=car&policy=1 "行车路线")
 
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/1e17b4ca898d3d1a4a331895ef0aed0c?showdoc=.jpg)
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/b66a4d8d73c534cbd5219c55dfd675a1?showdoc=.jpg)
+
+![](xj-north-circle/xj-img6.png)
+![](xj-north-circle/xj-img7.png)
 
 ---
 
@@ -158,7 +161,7 @@ categories:
 2. 布尔津-克拉玛依这段横风很大，开车要双手握紧方向盘；
 3. [行车路线](https://www.amap.com/dir?from%5Bid%5D=B0FFIPUO59-from&from%5Bname%5D=%E7%A6%BE%E6%9C%A8%E6%9D%91&from%5Blnglat%5D=87.432910%2C48.568561&from%5Bmodxy%5D=87.432910%2C48.568561&from%5Bpoitype%5D=190108&from%5Badcode%5D=654321&to%5Bid%5D=B03DE0004L&to%5Bname%5D=%E4%B8%96%E7%95%8C%E9%AD%94%E9%AC%BC%E5%9F%8E&to%5Blnglat%5D=85.746798%2C46.129675&to%5Bmodxy%5D=85.735517%2C46.137257&to%5Bpoitype%5D=110202&to%5Badcode%5D=650205&type=car&policy=1 "行车路线")
 
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/5a957d2f57f3078dbfcce9824dc91355?showdoc=.jpg)
+![](xj-north-circle/xj-img8.png)
 
 
 ---
@@ -173,7 +176,7 @@ categories:
 4. 入住果子沟大桥绝佳观景台唯一的山庄；
 5. 早点的话，可以上观景台看全景。
 
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/a21a7776e7052da0719b04413ba8b9b5?showdoc=.jpg)
+![](xj-north-circle/xj-img9.png)
 
 ##### 注意事项：
 1. [可入住龙岭山庄，山顶北可观赛里木湖全景，南可俯揽果子沟大桥全景](https://go.cqmmgo.com/forum-2466-thread-47141499934173209-8-1.html "可入住龙岭山庄，山顶北可观赛里木湖全景，南可俯揽果子沟大桥全景")；
@@ -183,7 +186,7 @@ categories:
 1. 自驾全程600公里，不耽误只要6个小时；
 2. [行车路线](https://www.amap.com/dir?from%5Bid%5D=B03DE0004L-from&from%5Bname%5D=%E4%B8%96%E7%95%8C%E9%AD%94%E9%AC%BC%E5%9F%8E&from%5Blnglat%5D=85.746798%2C46.129675&from%5Bmodxy%5D=85.735517%2C46.137257&from%5Bpoitype%5D=110202&from%5Badcode%5D=650205&to%5Bid%5D=B038D0LN33&to%5Bname%5D=%E8%B5%9B%E9%87%8C%E6%9C%A8%E6%B9%96%E6%B8%B8%E5%AE%A2%E4%B8%AD%E5%BF%83&to%5Blnglat%5D=81.394494%2C44.601962&to%5Bmodxy%5D=81.394578%2C44.601789&to%5Bpoitype%5D=070000&to%5Badcode%5D=652701&type=car&policy=1 "行车路线")
 
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/c9c822aca8e4ff83f4bfa97a928d9fd4?showdoc=.jpg)
+![](xj-north-circle/xj-img10.png)
 
 
 ---
@@ -207,7 +210,7 @@ categories:
 1. 自驾全程450公里，7小时左右。
 2. [行车路线](https://www.amap.com/dir?from%5Bid%5D=B038D0LN33-from&from%5Bname%5D=%E8%B5%9B%E9%87%8C%E6%9C%A8%E6%B9%96%E6%B8%B8%E5%AE%A2%E4%B8%AD%E5%BF%83&from%5Blnglat%5D=81.394494%2C44.601962&from%5Bmodxy%5D=81.394578%2C44.601789&from%5Bpoitype%5D=070000&from%5Badcode%5D=652701&to%5Badcode%5D=652827&to%5Bname%5D=%E5%B7%B4%E9%9F%B3%E5%B8%83%E9%B2%81%E5%85%8B%E9%95%87&to%5Bid%5D=B0FFIITRO1&to%5Bpoitype%5D=190106&to%5Blnglat%5D=84.15197999999998%2C43.033831&to%5Bmodxy%5D=&type=car&policy=1 "行车路线")
 
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/061bfe9226eabbd5fea27fa0e69acbc0?showdoc=.jpg)
+![](xj-north-circle/xj-img11.png)
 
 
 ---
@@ -228,7 +231,7 @@ categories:
 ##### 车程：
 1. [行车路线](https://www.amap.com/dir?from%5Badcode%5D=652827&from%5Bname%5D=%E5%B7%B4%E9%9F%B3%E5%B8%83%E9%B2%81%E5%85%8B%E9%95%87&from%5Bid%5D=B0FFIITRO1-from&from%5Bpoitype%5D=190106&from%5Blnglat%5D=84.15197999999998%2C43.033831&from%5Bmodxy%5D=&to%5Bid%5D=B03DF0668Z&to%5Bname%5D=%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E5%9C%B0%E7%AA%9D%E5%A0%A1%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&to%5Blnglat%5D=87.479742%2C43.905808&to%5Bmodxy%5D=87.478441%2C43.902829&to%5Bpoitype%5D=150104&to%5Badcode%5D=650104&type=car&policy=1 "行车路线")
 
-![](https://www.showdoc.cc/server/api/common/visitfile/sign/7bf5dc203c98a75be48e02249cc62ca5?showdoc=.jpg)
+![](xj-north-circle/xj-img12.png)
 
 
 ---
