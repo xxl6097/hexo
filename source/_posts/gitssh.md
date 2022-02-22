@@ -11,7 +11,7 @@ git使用SSH进行无密码身份验证
 <!--more-->
 
 ## 生成key
-
+---
 #### 1. ed25519方式
     ssh-keygen -t ed25519 -C "uuxia@uuxia.cn"
     cat ~/.ssh/id_ed25519.pub
@@ -22,7 +22,7 @@ git使用SSH进行无密码身份验证
 
 
 ## 测试
-
+---
 #### 1. github
     ssh -T git@github.com
 
@@ -34,4 +34,5 @@ git使用SSH进行无密码身份验证
 
 
 ## 注意
+---
 在个人设置里面添加前，必须删除单独项目中添加的ssh key！！！
