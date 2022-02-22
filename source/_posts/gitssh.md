@@ -3,11 +3,11 @@ title: git使用SSH进行无密码身份验证
 date: 2022-02-11 17:23:20
 tags: [git,github,gitee,coding]
 categories:
-- [Git, github]
-- [Git, gitee]
+- [Git, SSH]
 ---
 
 git使用SSH进行无密码身份验证
+
 <!--more-->
 
 ## 一、生成key
