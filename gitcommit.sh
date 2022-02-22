@@ -49,8 +49,8 @@ function push() {
   echo "4---->$commit"
   git add .
   git commit -m "$commit"
-  git push -u origin main
-  #git push
+#  git push -u origin main
+  git push
 }
 
 push $1 $2
