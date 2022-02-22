@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c35257e4-7aca-4f87-b419-869846003fcd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/public/tags/Android/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/Android/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/android/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/android/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_posts/centos-server.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/centos-server.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
