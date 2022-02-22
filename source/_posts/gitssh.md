@@ -31,15 +31,15 @@ cat ~/.ssh/id_rsa.pub
 ## 二、测试
 
 
-### 测试github服务器
+### github
 ```
 ssh -T git@github.com
 ```
-### 测试gitee服务器
+### gitee
 ```
 ssh -T git@gitee.com
 ```
-### 测试coding服务
+### coding
 ```
 ssh -T git@e.coding.net
 ```

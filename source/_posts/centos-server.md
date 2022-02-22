@@ -24,7 +24,7 @@ categories:
 
 
 
-#### nginx.conf
+### nginx.conf
 
 
 ```
@@ -65,7 +65,7 @@ log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
 
 ```
 
-#### admin.conf
+### admin.conf
 
 ```
 server {
@@ -86,7 +86,7 @@ server {
 
 ```
 
-#### file.conf
+### file.conf
 
 ```
 autoindex on;# 显示目录
@@ -109,7 +109,7 @@ server {
 ```
 
 
-#### cloud.conf
+### cloud.conf
     
 ```
 server {
@@ -129,7 +129,7 @@ server {
 
 ```
 
-#### java.conf
+### java.conf
 
 ```
 
@@ -289,11 +289,13 @@ server {
 
 ---
 ## 2. mysql安装配置
-
+```
     1.下载MySQL
     Red Hat Enterprise Linux / Oracle Linux
     2. 选择 `Red Hat Enterprise Linux 8 / Oracle Linux 8 (x86, 64-bit), RPM Bundle
----
+```
+
+```
     安装
     wget https://cdn.mysql.com//Downloads/MySQL-8.0/mysql-8.0.28-1.el8.x86_64.rpm-bundle.tar
     tar -xvf mysql-8.0.28-1.el8.x86_64.rpm-bundle.tar 
@@ -303,7 +305,8 @@ server {
     rpm -ivh mysql-community-server-8.0.28-1.el8.x86_64.rpm --nodeps --force
     通过 rpm -qa | grep mysql 命令查看 mysql 的安装包
 
----
+```
+```
 
     通过以下命令，完成对 mysql 数据库的初始化和相关配置
 
@@ -312,7 +315,7 @@ server {
     systemctl start mysqld.service;
     systemctl enable mysqld;
 
-
+```
 通过 `cat /var/log/mysqld.log | grep password` 命令查看数据库的密码
 
 
@@ -326,13 +329,13 @@ server {
 通过 exit; 命令退出 MySQL，然后通过新密码再次登陆
 
 通过以下命令，进行远程访问的授权
-
+```
     create user 'root'@'%' identified with mysql_native_password by 'root';
     
     grant all privileges on *.* to 'root'@'%' with grant option;
     
     flush privileges;
-
+```
 
 
 sqlyog链接时出现2058异常
@@ -349,23 +352,25 @@ sqlyog链接时出现2058异常
 
 
 ### 方式一（推荐）
-
+```
     查询安装的jdk版本
     yum -y list java*
     安装jdk1.8
     yum install -y java-11-openjdk.x86_64
-
+```
 
 ### 方式二
 #### 下载
-
+```
     https://www.oracle.com/java/technologies/downloads/#java8
 
     选择 `jdk-8u321-linux-x64.tar.gz`
 
     解压 `tar -zxvf jdk-8u321-linux-x64.tar.gz`
 
----
+```
+
+```
 
     修改环境变量 `nano /etc/profile`
 
@@ -374,10 +379,10 @@ sqlyog链接时出现2058异常
     export PATH=$PATH:$JAVA_HOME/bin
 
     source /etc/profile
-
+```
 ---
 ## 4. gralde安装
-
+```
     wget https://services.gradle.org/distributions/gradle-6.7-bin.zip
 
     unzip gradle-6.7-bin.zip
@@ -387,13 +392,13 @@ sqlyog链接时出现2058异常
     PATH=$PATH:/usr/lib/gradle-6.7/bin
     
     source ~/.bash_profile
-
+```
 
 ---
 ## 5. 安装frps安装
 
 服务端配置
-
+```
     [common]
     bind_port = 8000
     token = xxxxxxxxx
@@ -403,10 +408,10 @@ sqlyog链接时出现2058异常
     vhost_http_port = 9090
     vhost_https_port = 9091
     subdomain_host = uuxia.cn
-
+```
 
 客户端配置
-
+```
     [common]
     tls_enable = true
     admin_addr = 0.0.0.0
@@ -447,15 +452,17 @@ sqlyog链接时出现2058异常
     local_ip = 192.168.31.92
     local_port = 22
     remote_port = 7003
-
+```
 ---
 ## 6. 安装Node.js
-
+---
+```
     1 下载
 
     官网地址：https://nodejs.org/en/download/
     wget https://nodejs.org/dist/v10.24.0/node-v10.24.0-linux-x64.tar.gz
----
+```
+```
     安装
 
     tar -xvf node-v10.24.0-linux-x64.tar.gz
@@ -468,12 +475,15 @@ sqlyog链接时出现2058异常
 
     npm uninstall hexo-cli -g  推荐这个，成功卸载
 
+```
 ---
 ## 7. 页脚备案代码
-
+```
 
     <div style="color:#666;text-align:center;margin-top:-10px;padding-bottom:35px;">
         <p><a style="color:#666;" text-decoration:underline;" href="http://beian.miit.gov.cn/">工业和信息化部备案管理系统网站 粤ICP备2022014941号</a></p>
         <p>主办单位：<a style="color:#666;" text-decoration:underline;" target="_blank" href="http://uuxia.cn">悠悠科技</a></p>
         <p>Operated by Guangzhou ChoMeng Computer System Co., Ltd.</p>
     </div>
+
+```
