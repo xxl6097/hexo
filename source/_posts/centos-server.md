@@ -5,7 +5,6 @@ tags: [centos,hexo,java,frp,nginx,mysql,gradle]
 categories: 
 - [Centos]
 ---
-
 主要记录我的centos服务器上的服务环境安装，frp、nginx配置、java程序、mysql安装、个人博客hexo。
 
 <!--more-->
