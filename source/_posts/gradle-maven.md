@@ -1,19 +1,11 @@
----
-title: Gradle发布MavenCenter和Nexus私服插件
-date: 2022-03-10 18:46:12
-tags: [java,android,gradle,maven,Kotlin]
----categories:
-- [gradle]
----
+## Gradle发布MavenCenter和Nexus私服插件
 
-一款Gradle插件，可以将你的Java Library、Android Library和Kotlin Library轻松的发布到MavenCenter和自己的Mexus私服。
-![gradle-publish-plugin.png](gradle-maven/gradle-publish-plugin.png)
+基于`Java`语言与`Gradle Api`开发的`Gradle Plugin`，本`Gradle插件`可以让你的`library`发布到`MavenCenter`和自己的`nexus`私服变得非常容易。
+
+![gradle-publish-plugin.png](img/gradle-publish-plugin.png)
 
 <!--more-->
 
-
-### 介绍
-基于`Java`语言与`Gradle Api`开发的`Gradle Plugin`，本`Gradle插件`可以让你的`library`发布到`MavenCenter`和自己的`nexus`私服变得非常容易。
 
 
 
@@ -82,7 +74,7 @@ ext {
 
 #### 3. 执行发布任务
 
-![发布Maven](gradle-maven/maven.jpg)
+![发布Maven](img/maven.jpg)
 
 如上图，点击`uploadToMaven`，即可将库发布到MavenCenter
 
@@ -125,11 +117,11 @@ coding.release=https://clife-devops-maven.pkg.coding.net/repository/public-repos
 
 | 参数             | 必选  | 描述                                   |
 |:---------------|:----|--------------------------------------|
-| nexus.name     | 是   | 私服前缀名称，本例`coding`，下面字段就都以`coding`为前缀 |
-| nexus.username | 是   | 私服用户名                                |
-| nexus.password | 是   | 私服密码                                 |
-| nexus.snapshot | 是   | 私服快照版上传地址                            |
-| nexus.release  | 是   | 私服`release`版上传地址                     |
+| nexus.name     | 是   | 自定义前缀名称，本例`coding`，下面字段就都以`coding`为前缀 |
+| coding.username | 是   | 私服用户名                                |
+| coding.password | 是   | 私服密码                                 |
+| coding.snapshot | 是   | 私服快照版上传地址                            |
+| coding.release  | 是   | 私服`release`版上传地址                     |
 
 
 #### 2. 配置`library/build.gradle`
@@ -163,7 +155,7 @@ ext {
 
 #### 3. 执行发布任务
 
-![发布Maven](gradle-maven/nexus.jpg)
+![发布Maven](img/nexus.jpg)
 
 如上图，点击`uploadToCoding`，即可将库发布到Nexus私服
 
