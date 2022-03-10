@@ -2,11 +2,10 @@
 title: Gradle发布MavenCenter和Nexus私服插件
 date: 2022-03-10 18:46:12
 tags: [java,android,gradle,maven,Kotlin]
----categories:
+categories:
 - [gradle]
 ---
 
-## Gradle发布MavenCenter和Nexus私服插件
 
 基于`Java`语言与`Gradle Api`开发的`Gradle Plugin`，本`Gradle插件`可以让你的`library`发布到`MavenCenter`和自己的`nexus`私服变得非常容易。
 
@@ -176,3 +175,4 @@ ext {
 [1. android发布三方库到远程maven仓库详细教程](https://blog.csdn.net/zyw0101/article/details/120670836?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-2-120670836.pc_agg_new_rank&utm_term=android%E5%8F%91%E5%B8%83maven&spm=1000.2123.3001.4430)
 
 [2. 发布Android Lib到Maven Central](https://mp.weixin.qq.com/s/FVR6_zMp5DxO5N4ptVuA6g)
+
