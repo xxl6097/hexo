@@ -15,7 +15,13 @@ tags: [java,android,gradle,maven,Kotlin]
 ### 介绍
 基于`Java`语言与`Gradle Api`开发的`Gradle Plugin`，本`Gradle插件`可以让你的`library`发布到`MavenCenter`和自己的`nexus`私服变得非常容易。
 
+![gradle-publish-plugin.png](gradle-maven/gradle-publish-plugin.png)
 
+### 最新版本
+
+```
+classpath 'io.github.szhittech:gradle-maven:0.0.1
+```
 
 ### 功能简介
 
@@ -23,6 +29,21 @@ tags: [java,android,gradle,maven,Kotlin]
 - 支持在新的gradle中依赖方式 `api / implementation`；
 - 支持签名库资源，`包括sources`、`Javadoc`、`POM`（需要`Gradle Version >= 4.8`）
 - 本插件内置了`signing`签名信息与文件(`secring.gpg`)
+
+### 使用步骤
+
+#### 1. 在根目录build.gradle中新增如下代码
+
+```
+classpath 'io.github.szhittech:gradle-maven:0.0.1'
+
+```
+
+#### 2. 在library/build.gradle中新增如下代码
+
+```
+apply plugin: 'gradle.maven'
+```
 
 ### 发布`MavenCenter`步骤
 
@@ -63,7 +84,7 @@ ext {
 
 ![发布Maven](gradle-maven/maven.jpg)
 
-如上如，点击`uploadToMaven`，即可将库发布到MavenCenter
+如上图，点击`uploadToMaven`，即可将库发布到MavenCenter
 
 发布`MavenCenter`成功后 `Release`版步审核步骤如下：
 1. 上述步骤成功后，请登录[https://s01.oss.sonatype.org/](https://s01.oss.sonatype.org/);
@@ -138,4 +159,3 @@ ext {
 [1. android发布三方库到远程maven仓库详细教程](https://blog.csdn.net/zyw0101/article/details/120670836?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-2-120670836.pc_agg_new_rank&utm_term=android%E5%8F%91%E5%B8%83maven&spm=1000.2123.3001.4430)
 
 [2. 发布Android Lib到Maven Central](https://mp.weixin.qq.com/s/FVR6_zMp5DxO5N4ptVuA6g)
-
