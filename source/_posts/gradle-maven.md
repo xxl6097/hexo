@@ -1,3 +1,11 @@
+---
+title: Gradle发布MavenCenter和Nexus私服插件
+date: 2022-03-10 18:46:12
+tags: [java,android,gradle,maven,Kotlin]
+---categories:
+- [gradle]
+---
+
 ## Gradle发布MavenCenter和Nexus私服插件
 
 基于`Java`语言与`Gradle Api`开发的`Gradle Plugin`，本`Gradle插件`可以让你的`library`发布到`MavenCenter`和自己的`nexus`私服变得非常容易。
