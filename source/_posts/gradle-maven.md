@@ -15,7 +15,7 @@ tags: [java,android,gradle,maven,Kotlin]
 ### 介绍
 基于`Java`语言与`Gradle Api`开发的`Gradle Plugin`，本`Gradle插件`可以让你的`library`发布到`MavenCenter`和自己的`nexus`私服变得非常容易。
 
-![gradle-publish-plugin.png](gradle-maven/gradle-publish-plugin.png)
+
 
 ### 最新版本
 
