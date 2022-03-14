@@ -18,7 +18,7 @@ categories:
 ### 一、最新版本
 
 ```
-classpath 'io.github.szhittech:gradle-maven:0.0.5
+classpath 'io.github.szhittech:gradle-maven:0.0.7
 ```
 
 ### 二、功能简介
@@ -33,7 +33,7 @@ classpath 'io.github.szhittech:gradle-maven:0.0.5
 #### 1. 在根目录`build.gradle`中新增如下代码
 
 ```
-classpath 'io.github.szhittech:gradle-maven:0.0.5'
+classpath 'io.github.szhittech:gradle-maven:0.0.7'
 
 ```
 
@@ -174,3 +174,4 @@ ext {
 [1. android发布三方库到远程maven仓库详细教程](https://blog.csdn.net/zyw0101/article/details/120670836?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-2-120670836.pc_agg_new_rank&utm_term=android%E5%8F%91%E5%B8%83maven&spm=1000.2123.3001.4430)
 
 [2. 发布Android Lib到Maven Central](https://mp.weixin.qq.com/s/FVR6_zMp5DxO5N4ptVuA6g)
+
