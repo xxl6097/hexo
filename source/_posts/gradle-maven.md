@@ -1,6 +1,6 @@
 ---
 title: Gradle发布MavenCenter和Nexus私服插件
-date: 2022-03-10 18:46:12
+date: 2022-03-21 18:46:12
 tags: [java,android,gradle,maven,Kotlin]
 categories:
 - [gradle]
