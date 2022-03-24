@@ -1,12 +1,12 @@
 ---
-title: 树莓派设置代理科学上网
+title: 树莓派设置proxy
 date: 2022-02-14 11:54:21
 tags: [raspberry,proxy,shadowsocks]
 categories:
 - [Raspberry]
 ---
 
-树莓派设置代理科学上网
+树莓派设置proxy
 
 <!--more-->
 
