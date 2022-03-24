@@ -18,7 +18,7 @@ categories:
 ### 一、最新版本(根目录build.gradle)
 
 ```
-classpath 'io.github.szhittech:gradle-maven:0.0.8
+classpath("io.github.szhittech:gradle-maven:0.0.9")
 ```
 
 ### 二、功能简介
@@ -33,7 +33,7 @@ classpath 'io.github.szhittech:gradle-maven:0.0.8
 #### 1. 在根目录`build.gradle`中新增如下代码
 
 ```
-classpath 'io.github.szhittech:gradle-maven:0.0.8'
+classpath("io.github.szhittech:gradle-maven:0.0.9")
 
 ```
 
@@ -61,7 +61,7 @@ ext {
   connection = "scm:git@github.com:szhittech/clifesdk.git"
   authorId = "uuxia"
   authorName = "xiamoumou"
-  authorEmail = "xxx@163.com"
+  authorEmail = "xxx@clife.com"
 }
 
 ```
@@ -101,11 +101,11 @@ ext {
 
 
 ```
-#maven.name=maven
-#maven.username=你的oss账号
-#maven.password=你的oss密码
-#maven.release=https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
-#maven.snapshot=https://s01.oss.sonatype.org/content/repositories/snapshots/
+maven.name=maven
+maven.username=你的oss账号
+maven.password=你的oss密码
+maven.release=https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
+maven.snapshot=https://s01.oss.sonatype.org/content/repositories/snapshots/
 
 ```
 
@@ -121,13 +121,13 @@ coding.snapshot=https://clife-devops-maven.pkg.coding.net/repository/public-repo
 coding.release=https://clife-devops-maven.pkg.coding.net/repository/public-repository/maven-releases/
 ```
 
-| 参数             | 必选  | 描述                                   |
-|:---------------|:----|--------------------------------------|
-| nexus.name     | 是   | 自定义前缀名称，本例`coding`，下面字段就都以`coding`为前缀 |
-| coding.username | 是   | 私服用户名                                |
-| coding.password | 是   | 私服密码                                 |
-| coding.snapshot | 是   | 私服快照版上传地址                            |
-| coding.release  | 是   | 私服`release`版上传地址                     |
+| 参数              | 必选  | 描述                                    |
+|:----------------|:----|---------------------------------------|
+| nexus.name      | 是   | 自定义前缀名称，本例`coding`，下面字段就都以`coding`为前缀 |
+| coding.username | 是   | 私服用户名                                 |
+| coding.password | 是   | 私服密码                                  |
+| coding.snapshot | 是   | 私服快照版上传地址                             |
+| coding.release  | 是   | 私服`release`版上传地址                      |
 
 
 #### 2. 配置`library/build.gradle`
@@ -142,7 +142,7 @@ ext {
   connection = "scm:git@github.com:szhittech/clifesdk.git"
   authorId = "uuxia"
   authorName = "xiamoumou"
-  authorEmail = "xxx@163.com"
+  authorEmail = "xxx@clife.cn"
 }
 
 ```
