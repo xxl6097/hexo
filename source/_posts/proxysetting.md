@@ -13,14 +13,15 @@ ubuntu、linux下terminal终端http和git代理设置
 ```
 	export http_proxy=http://127.0.0.1:1080
 	export https_proxy=http://127.0.0.1:1080
+	
 	export http_proxy=socks5://127.0.0.1:1087
 	export https_proxy=socks5://127.0.0.1:1087
 ```
 
 #http代理查看
 ```
-	export http_proxy
-	export https_proxy
+	echo $http_proxy
+	echo $https_proxy
 ```
 #git代理设置
 ```
