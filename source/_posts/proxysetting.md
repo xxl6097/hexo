@@ -39,3 +39,17 @@ ubuntu、linux下terminal终端http和git代理设置
 	git config --global --unset http.proxy
 	git config --global --unset https.proxy
 ```
+
+
+```
+
+git config --global user.email "xiaoli.xia@clife.cn"
+git config --global user.name "uuxia"
+
+repo init -u https://github.com/PixelExperience/manifest -b twelve
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
+cd ~/android/pe
+repo init -u https://github.com/PixelExperience/manifest -b twelve
+
+```
