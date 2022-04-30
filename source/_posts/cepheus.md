@@ -30,7 +30,7 @@ $ lunch aosp_cepheus-userdebug
 $ lunch aosp_cepheus-user
 
 # Build the code
-$ mka bacon -jX
+$ mka bacon -j4
 ```
 
 ### Turn on caching to speed up build ###
