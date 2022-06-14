@@ -15,7 +15,7 @@ timezone:
 url: https://uuxia.cn
 root: /
 permalink: :year/:month/:day/:title/
-permalink_defaults: uuuuu
+permalink_defaults: 
 
 # Directory
 source_dir: source
@@ -112,8 +112,8 @@ category_generator:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: raytaylorism
-#theme: hexo-theme-matery
+#theme: raytaylorism
+theme: hexo-theme-matery
 stylus:
   compress: true
 search:
