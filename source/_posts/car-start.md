@@ -8,6 +8,6 @@ categories:
 
 汽车搭火教程
 
-![gradle-publish-plugin.png](car-start/start.png)
+![car-start.png](car-start/start.png)
 
 <!--more-->
