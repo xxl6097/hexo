@@ -51,6 +51,10 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
+
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
