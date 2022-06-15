@@ -1,5 +1,5 @@
 ---
-title: 腾讯云【centos】一键安装 shadowsocks-libev
+title: 腾讯云【centos7/8】一键安装 shadowsocks-libev
 date: 2021-09-08 17:29:21
 tags: [centos,腾讯云,shadowsocks]
 categories:
