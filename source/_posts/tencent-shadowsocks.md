@@ -33,3 +33,42 @@ CentOS 7/8 一键安装 shadowsocks-libev, 本教程仅提供学习，请勿用�
 2、接下来选择SS要使用的服务器端口，输入自己喜欢的端口， 也可以直接按回车使用默认端口
 3、 然后选择加密方式（仅保留相对安全的加密方式），如果选择chacha20的话，就输入对应序号3，按回车继续
 4、 安装完成后，会有如下图安装成功的提示，记住各项信息，在客户端连接时需要用到
+
+### 4、shadowsocks管理
+
+```bash
+
+#!/bin/bash
+
+function status() {
+    systemctl status shadowsocks-libev.service
+}
+
+function restart() {
+    systemctl restart shadowsocks-libev.service
+}
+
+function log() {
+    journalctl -f -u shadowsocks-libev.service
+}
+
+function m() {
+    echo "1. 重启"
+    echo "2. 重看状态"
+    echo "3. 查看日志"
+    echo "请输入编号:"
+    read index
+
+    case "$index" in
+    [1]) (restart);;
+    [2]) (status);;
+    [3]) (log);;
+    *) echo "exit" ;;
+  esac
+}
+
+m
+
+
+
+```
