@@ -33,3 +33,16 @@ yum install gcc-c++
        make
        sudo make install
 ```
+
+## 三、下载交叉编译工具
+
+
+https://developer.arm.com/downloads/-/gnu-a
+
+```bash
+
+wget https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-a/10.2-2020.11/binrel/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu.tar.xz
+
+```
+解压：xz -d gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu.tar.xz
+解压：tar -xf gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu.tar.xz
