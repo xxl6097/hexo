@@ -18,7 +18,7 @@ categories:
 
 ### 一、最新版本(根目录build.gradle)
 
-```
+```bash
 classpath("io.github.szhittech:gradle-maven:0.0.9")
 ```
 
@@ -33,14 +33,14 @@ classpath("io.github.szhittech:gradle-maven:0.0.9")
 
 #### 1. 在根目录`build.gradle`中新增如下代码
 
-```
+```bash
 classpath("io.github.szhittech:gradle-maven:0.0.9")
 
 ```
 
 #### 2. 在`library/build.gradle`中新增如下代码
 
-```
+```gradle
 apply plugin: 'gradle.maven'
 ```
 
@@ -52,7 +52,7 @@ apply plugin: 'gradle.maven'
 
 #### 2. 配置`library/build.gradle`
 
-```
+```gradle
 ext {
   groupId = "io.github.szhittech"
   name = "gradle-maven"
@@ -101,7 +101,7 @@ ext {
 `gradle.properties`配置如下：
 
 
-```
+```gradle
 maven.name=maven
 maven.username=你的oss账号
 maven.password=你的oss密码
@@ -114,7 +114,7 @@ maven.snapshot=https://s01.oss.sonatype.org/content/repositories/snapshots/
 
 #### 1. 配置根目录下`gradle.properties`
 
-```
+```bash
 nexus.name=coding
 coding.username=xiaoli.xia@clife.cn
 coding.password=xxxxxx
@@ -133,7 +133,7 @@ coding.release=https://clife-devops-maven.pkg.coding.net/repository/public-repos
 
 #### 2. 配置`library/build.gradle`
 
-```
+```gradle
 ext {
   groupId = "io.github.szhittech"
   name = "gradle-maven"

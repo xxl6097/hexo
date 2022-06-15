@@ -38,24 +38,24 @@ http://sourceforge.net/projects/shadowsocksgui/files/dist/
 
  1. 获取安装文件
 
-```
+```bash
 wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev.sh
 ```
 
  2. 设置执行权限
 
-```
+```bash
 chmod +x shadowsocks-libev.sh
 ```
 
  3. 按照命令
 
-```
+```bash
 ./shadowsocks-libev.sh 2>&1 | tee shadowsocks-libev.log
 ```
 ***安装完成后，脚本提示如下：***
 
-```
+```bash
 Congratulations, shadowsocks-libev install completed!
 Your Server IP:your_server_ip
 Your Server Port:your_server_port
@@ -70,7 +70,7 @@ Enjoy it!
 
  4. 安装完成后即已后台启动 shadowsocks ，运行
 
-```
+```bash
 ps -ef | grep ss-server | grep -v ps | grep -v grep
 ```
 
@@ -83,7 +83,7 @@ ps -ef | grep ss-server | grep -v ps | grep -v grep
 
  6. 卸载方法
 
-```
+```bash
 ./shadowsocks-libev.sh uninstall
 ```
 
@@ -99,7 +99,7 @@ ps -ef | grep ss-server | grep -v ps | grep -v grep
 更新说明（2015 年 04 月 30 日）：
 1、本脚本会始终安装最新版的 Shadowsocks；
 2、修改配置文件 /etc/shadowsocks-libev/config.json 同时启用 IPv4 与 IPv6 支持：
-```
+```bash
 {
     "server":["[::0]","0.0.0.0"],
     "server_port":your_server_port,
