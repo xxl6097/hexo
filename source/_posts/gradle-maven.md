@@ -4,6 +4,7 @@ date: 2022-03-21 18:46:12
 tags: [java,android,gradle,maven,Kotlin]
 categories:
 - [gradle]
+- [maven]
 ---
 
 

@@ -3,6 +3,8 @@ title: terminal代理设置
 date: 2022-04-28 22:54:33
 tags: [ubuntu,proxy,git]
 password: 6cf9d8a4f434262f7e0836d877608d48a6dcca8b681cf23ae1c3b93557fc3411
+categories:
+- [proxy]
 ---
 
 ubuntu、linux下terminal终端http和git代理设置

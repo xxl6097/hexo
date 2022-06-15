@@ -2,6 +2,9 @@
 title: 小米9基于PixelExperience源码编译步骤
 date: 2022-04-28 23:05:47
 tags: [cepheus,proxy,android]
+categories: 
+- [AOSP]
+- [小米9]
 ---
 
 # Pixel Experience #
