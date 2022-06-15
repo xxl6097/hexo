@@ -12,7 +12,7 @@ Android导入第三方静态库.a编译成动态库.so
 下面我以一个简单的实际例子来讲解如何在动态库中导入静态库。
 
 静态库中的源代码有两个文件：static.h, static.c，有一个add方法 static.h
-```
+```c++
 #include <stdio.h> 
 int add(int x, int y);
 static.c
