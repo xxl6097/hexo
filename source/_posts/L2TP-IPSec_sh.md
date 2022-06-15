@@ -1,7 +1,7 @@
 ---
 title: L2TP/IPSec一键安装脚本
 date: 2018-04-02 11:04:50
-tags: [shadowsocks,翻墙]
+tags: [shadowsocks,科学上网]
 categories:
 - [VPN]
 ---

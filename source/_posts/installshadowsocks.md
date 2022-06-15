@@ -1,7 +1,7 @@
 ---
 title: CentOS下shadowsocks-libev一键安装脚本
 date: 2016-05-11 05:23:03
-tags: [shadowsocks,翻墙]
+tags: [shadowsocks,科学上网]
 categories:
 - [VPN]
 ---
