@@ -16,8 +16,8 @@ function builds() {
   echo "cp -r gitcommit.sh ../xxl6097.github.io/"
   cp -r gitcommit.sh ../xxl6097.github.io/
 
-  echo "cp -r web ../xxl6097.github.io/"
-  cp -r web ../xxl6097.github.io/
+  echo "cp -r /root/wechat-cloud/we-api/src/main/resources/web ../xxl6097.github.io/"
+  cp -r /root/wechat-cloud/we-api/src/main/resources/web ../xxl6097.github.io/
 
   echo "cd ../xxl6097.github.io/"
   cd ../xxl6097.github.io/
