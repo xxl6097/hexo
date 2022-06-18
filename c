@@ -11,6 +11,7 @@ function builds() {
   echo "sh gitcommit.sh"
   ./gitcommit.sh
 
+  sudo rm -rf ../xxl6097.github.io/*
   echo "cp -r public/* ../xxl6097.github.io/"
   cp -r public/* ../xxl6097.github.io/
   echo "cp -r gitcommit.sh ../xxl6097.github.io/"
