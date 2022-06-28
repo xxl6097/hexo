@@ -366,6 +366,10 @@ sqlyog链接时出现2058异常
 ```
     https://www.oracle.com/java/technologies/downloads/#java8
 
+    Mac：https://download.oracle.com/otn/java/jdk/8u321-b07/df5ad55fdd604472a86a45a217032c7d/jdk-8u321-macosx-x64.dmg
+    Linux：https://download.oracle.com/otn/java/jdk/8u321-b07/df5ad55fdd604472a86a45a217032c7d/jdk-8u321-linux-x64.tar.gz
+    Windows：https://download.oracle.com/otn/java/jdk/8u321-b07/df5ad55fdd604472a86a45a217032c7d/jdk-8u321-windows-x64.exe
+
     选择 `jdk-8u321-linux-x64.tar.gz`
 
     解压 `tar -zxvf jdk-8u321-linux-x64.tar.gz`
