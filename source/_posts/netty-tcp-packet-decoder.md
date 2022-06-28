@@ -10,6 +10,10 @@ categories:
 
 <!--more-->
 
+基于Netty的TCP Server，处理二进制数据断包和粘包，以及tcp发送字符串的截取处理！
+
+<!--more-->
+
 
 ## 一、5A协议在Netty中处理断包粘包
 ```code
@@ -26,7 +30,7 @@ categories:
     int maxFrameLength      = 65535;   （len是两个byte，所以最大长度是无符号两个byte的最大值）
     int lengthFieldOffset   = 1;       （len的索引下表是1，下表从0开始）
     int lengthFieldLength   = 2;       （len是两个byte）
-    int lengthAdjustment    = -2;      （netty从len后面开始读取，5A这一子节又不再len中，len又是2子节，所以这里是-2）
+    int lengthAdjustment    = -2;      （netty从len后面开始读取，5A不在len中，len又是2byte，所以这里是-2）
     int initialBytesToStrip = 0;       （这个0表示完整的协议内容，如果不想要5A，那么这里就是1）
 
     socketChannel.pipeline().addLast(new LengthFieldBasedFrameDecoder(maxFrameLength, lengthFieldOffset, lengthFieldLength, lengthAdjustment, initialBytesToStrip));
