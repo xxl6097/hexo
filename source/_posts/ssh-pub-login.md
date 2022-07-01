@@ -31,3 +31,7 @@ JVu34FPEMHULkD4kxdCyAAAAD2hldHBpNEB1dXhpYS5jbgECAwQFBg==
 [id_ed25519_hetpi4s](id_ed25519_hetpi4s "公司树莓派4B+")
 
 [id_ed25519_homepi4s](id_ed25519_homepi4s "HOME树莓派4B+")
+
+光猫登陆：
+192.168.3.1
+root/adminHW
