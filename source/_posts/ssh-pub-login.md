@@ -22,4 +22,6 @@ JVu34FPEMHULkD4kxdCyAAAAD2hldHBpNEB1dXhpYS5jbgECAwQFBg==
 
 这是一个链接 [菜鸟教程](https://www.runoob.com)
 
-[id_ed25519_hetpi4s](ssh-pub-login/id_ed25519_hetpi4s "公司树莓派4B+")
+[id_ed25519_hetpi4s](id_ed25519_hetpi4s "公司树莓派4B+")
+
+[id_ed25519_homepi4s](id_ed25519_homepi4s "HOME树莓派4B+")
