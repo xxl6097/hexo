@@ -1,9 +1,15 @@
 ---
 title: SSH公钥免密登录
 date: 2022-07-01 20:23:16
-tags:
+tags: [ssh,pubkey,shell]
+password: 6cf9d8a4f434262f7e0836d877608d48a6dcca8b681cf23ae1c3b93557fc3411
+categories:
+- [ssh]
 ---
 
+ssh连接使用公钥免密登录
+
+<!--more-->
 
 https://blog.csdn.net/no1xium/article/details/123912874
 
