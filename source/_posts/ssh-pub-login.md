@@ -32,6 +32,8 @@ JVu34FPEMHULkD4kxdCyAAAAD2hldHBpNEB1dXhpYS5jbgECAwQFBg==
 
 [id_ed25519_homepi4s](id_ed25519_homepi4s "HOME树莓派4B+")
 
+[uuxia.cn](id_ed25519_uuxia.cn "uuxia.cn")
+
 光猫登陆：
 192.168.3.1
 root/adminHW
