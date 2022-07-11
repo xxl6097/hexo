@@ -19,7 +19,7 @@ categories:
 ### 一、最新版本(根目录build.gradle)
 
 ```bash
-classpath("io.github.szhittech:gradle-maven:0.0.9")
+classpath("io.github.szhittech:gradle-maven:0.1.0")
 ```
 
 ### 二、功能简介
@@ -34,7 +34,7 @@ classpath("io.github.szhittech:gradle-maven:0.0.9")
 #### 1. 在根目录`build.gradle`中新增如下代码
 
 ```bash
-classpath("io.github.szhittech:gradle-maven:0.0.9")
+classpath("io.github.szhittech:gradle-maven:0.1.0")
 
 ```
 
