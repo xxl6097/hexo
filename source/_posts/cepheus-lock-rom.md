@@ -11,7 +11,6 @@ categories:
 
 <!--more-->
 
-
 ## 小米9解锁
 
 1. 确保手机插入了一张SIM卡，并登陆小米账号，并断开Wi-Fi连接;
@@ -25,7 +24,7 @@ categories:
 
 ## 刷入 PixelExperience Recovery.
 
-1. 下载[PixelExperience Recovery;](http://file.uuxia.top:88/soft/mi9/miflash_unlock-en-6.5.224.28.zip)
+1. 下载[PixelExperience Recovery;](http://file.uuxia.top:88/soft/mi9/recovery_cepheus-12.1-20220611-0701-UNOFFICIAL.img)
 2. 将小米9手机连接PC电脑，并运行一下指令进入bootloader模式：
 ```
 adb reboot bootloader
@@ -36,14 +35,17 @@ fastboot devices
 ```
 4. 开始刷入`PixelExperience Recovery`
 ```
-fastboot flash recovery <recovery_filename>.img
+fastboot flash recovery recovery_cepheus-12.1-20220611-0701-UNOFFICIAL.img
 ```
 
 ## 开始 PixelExperience ROM 刷机
-1. 按 `Volume Up` + `Power`;
-2. 清空数据 `Format data / factory reset`;
-3. `Apply Update` > `Apply from ADB`;
-4. PC电脑端执行 `adb sideload filename.zip`
+
+
+1. uuxia编译的[ROM包](http://file.uuxia.top:88/soft/mi9/PixelExperience_cepheus-12.1-20220611-0701-UNOFFICIAL.zip)下载
+2. 按 `Volume Up` + `Power`;
+3. 清空数据 `Format data / factory reset`;
+4. `Apply Update` > `Apply from ADB`;
+5. PC电脑端执行 `adb sideload PixelExperience_cepheus-12.1-20220611-0701-UNOFFICIAL.zip`
 
 
 [附小米9刷回官方ROM](https://wiki.pixelexperience.org/devices/cepheus/build/)
