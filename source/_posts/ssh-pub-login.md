@@ -125,3 +125,5 @@ aNBtXC4cJ9wwaXKJaolDAAAAEUhvbmdLb25nQHV1eGlhLmNuAQIDBA==
 光猫登陆：
 192.168.3.1
 root/adminHW
+
+宽带账户:202107592177，密码:096016
