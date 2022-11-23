@@ -1,10 +1,4 @@
 ---
-title: go-cross-compile
-date: 2022-11-23 19:16:38
-tags:
----
-
----
 title: GoLang 全平台编译
 date: 2022-11-23 19:16:38
 tags: [go,cross]
