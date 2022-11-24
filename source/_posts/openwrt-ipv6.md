@@ -49,3 +49,7 @@ categories:
 - 测试IPV6：
  https://ipv6-test.com/
  https://test-ipv6.com/index.html.zh_CN
+
+
+
+ <video src="ipv6.mp4" style="width: 100%; height: 100%;" controls="controls"></video>
