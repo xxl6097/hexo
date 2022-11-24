@@ -9,6 +9,10 @@ categories:
 
 家庭光猫配置与IPV6设置，获取公网ipv6
 
+检测地址
+https://www.test-ipv6.com/  
+你的公网 IPv6 地址是 XXXX 证明你已经可以IPv6上网了
+
 <!--more-->
 
 光猫登陆地址：http://192.168.3.1
