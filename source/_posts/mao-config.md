@@ -17,6 +17,7 @@ categories:
 
 普通用户：root/adminHW
 管理员 ：telecomadmin/admintelecom
+宽带账户:202107592177，密码:096016
 
 光猫备份文件
 
