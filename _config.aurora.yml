@@ -54,9 +54,19 @@ menu:
   Tags: true
   Archives: true
   # 一个 github 项目的外部链接
-  Aurora:
+  projects:
     name: 'Aurora'
-    path: 'https://github.com/Aurora/hexo-theme-Aurora'
+    children:
+      obsidian:
+        name: 'Aurora Blog'
+        path: 'https://aurora.tridiamond.tech/'
+      Aurora:
+        name: 'Aurora Github'
+        path: 'https://github.com/auroral-ui/hexo-theme-aurora'
+  # External link for a github repo
+  Email:
+    name: 'Mail Me'
+    path: '263996097@qq.com'
 
 #! ---------------------------------------------------------------
 #! Theme Config
