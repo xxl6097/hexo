@@ -5,11 +5,8 @@ tags:
   - clashx
 categories:
   - linux
-
 cover: post/clashx/yuanyao.jpg
 feature: true
-password: 002402
-message: 输入密码界面提示说明
 ---
 
 ### 规则解释
