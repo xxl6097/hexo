@@ -6,7 +6,7 @@ tags:
 categories:
   - linux
 
-cover: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fxzd-img.dyshow.cn%2Fd%2Ffile%2Fbigpic%2F20160330052844733.jpg&refer=http%3A%2F%2Fxzd-img.dyshow.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672815479&t=46eedd333988427a0f7b196d9662fac3
+cover: yuanyao.jpg
 feature: true
 ---
 
