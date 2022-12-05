@@ -94,9 +94,9 @@ socials:
   #   link: https://live.bilibili.com/22619211
 
   ##! --- Using IconFont
-  # baidu:
-  #   icon: iconfont icon-baidu
-  #   link: https://live.bilibili.com/22619211
+  baidu:
+    icon: iconfont icon-baidu
+    link: https://www.baidu.com/my/index
 
   ##! --- Using FontAwesome
   # book:
