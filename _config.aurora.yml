@@ -53,6 +53,10 @@ menu:
   About: true
   Tags: true
   Archives: true
+  # 一个 github 项目的外部链接
+  Aurora:
+    name: 'Aurora'
+    path: 'https://github.com/Aurora/hexo-theme-Aurora'
 
 #! ---------------------------------------------------------------
 #! Theme Config
