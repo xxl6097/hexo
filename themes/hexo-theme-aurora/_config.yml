@@ -16,11 +16,11 @@ site:
   link: '/'
   language: en
   multi_language: true
-  logo: https://img-blog.csdnimg.cn/20210313122054101.png
+  logo: /medias/logo.png
   avatar: https://img-blog.csdnimg.cn/20210313122054101.png
   beian:
-    number: ''
-    link: ''
+    number: '工业和信息化部备案管理系统网站 粤ICP备2022014941号-1'
+    link: 'http://beian.miit.gov.cn'
   police_beian:
     number: ''
     link: ''
