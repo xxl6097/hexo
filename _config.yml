@@ -136,7 +136,7 @@ feed:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 
-#deploy:
-#  type: git
-#  repo:
-#    github: git@github.com:xxl6097/xxl6097.github.io.git,master
+deploy:
+ type: git
+ repo:
+   github: git@github.com:xxl6097/xxl6097.github.io.git,master
