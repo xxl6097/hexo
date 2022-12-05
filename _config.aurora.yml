@@ -21,9 +21,9 @@ site:
   avatar: /medias/avatar.jpg
   beian:
     number: '粤ICP备2022014941号-1'
-    link: ''
+    link: 'http://beian.miit.gov.cn'
   police_beian:
-    number: '粤ICP备2022014941号-1'
+    number: '2022014941'
     link: 'http://beian.miit.gov.cn'
 
 #! ---------------------------------------------------------------
