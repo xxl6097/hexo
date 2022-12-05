@@ -19,17 +19,17 @@ site:
   favicon: /favicon.png
   logo: /medias/logo.png
   avatar: /medias/avatar.jpg
-  # beian:
-  #   number: '粤ICP备2022014941号-1'
-  #   link: 'http://beian.miit.gov.cn'
-  # police_beian:
-  #   number: '粤ICP备2022014941号-1'
-  #   link: 'http://beian.miit.gov.cn'
-  #ICP备案信息尾部显示
-icp:
-  enable: true
-  url: http://beian.miit.gov.cn
-  text: 工业和信息化部备案管理系统网站 粤ICP备2022014941号-1
+  beian:
+    number: '粤ICP备2022014941号-1'
+    link: 'http://beian.miit.gov.cn'
+  police_beian:
+    number: '粤ICP备2022014941号-1'
+    link: 'http://beian.miit.gov.cn'
+#   #ICP备案信息尾部显示
+# icp:
+#   enable: true
+#   url: http://beian.miit.gov.cn
+#   text: 工业和信息化部备案管理系统网站 粤ICP备2022014941号-1
 
 #! ---------------------------------------------------------------
 #! Authors Configs
