@@ -120,7 +120,7 @@ category_generator:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: raytaylorism
-# theme: aurora
+theme: aurora
 # theme: hexo-theme-matery
 stylus:
   compress: true
