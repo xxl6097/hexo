@@ -118,8 +118,8 @@ category_generator:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: raytaylorism
-# theme: hexo-theme-aurora
-theme: hexo-theme-matery
+theme: hexo-theme-aurora
+# theme: hexo-theme-matery
 stylus:
   compress: true
 search:
