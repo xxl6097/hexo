@@ -1,8 +1,8 @@
 ---
 title: 家庭光猫配置
 date: 2022-11-24 20:07:17
-tags: 
-- [private]
+encrypt: true
+enc_pwd: 002402
 categories:
 - [mao]
 ---
