@@ -24,6 +24,11 @@ feature: true
 
 ### 基本配置
 
+:::tip
+Normal Tips Container
+:::
+
+
 ```YAML
 #---------------------------------------------------#
     ## 配置文件需要放置在 $HOME/.config/clash/config.yml
