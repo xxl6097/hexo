@@ -86,7 +86,7 @@ theme:
 #! @docs https://aurora.tridiamond.tech/guide/social.html
 #! ---------------------------------------------------------------
 socials:
-  github: 'https://github.com/TriDiamond'
+  github: 'https://github.com/xxl6097'
   customs:
   ##! Example:
   ##! --- Using SVG
@@ -96,7 +96,7 @@ socials:
 
   ##! --- Using IconFont
   baidu:
-    icon: iconfont icon-baidu
+    icon: https://himg.bdimg.com/sys/portrait/item/public.1.868e95ea.DjJabcwawzIP0jmepO6KfQ.jpg
     link: https://www.baidu.com/my/index
 
   ##! --- Using FontAwesome
