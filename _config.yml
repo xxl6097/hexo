@@ -9,7 +9,7 @@ description: 在浮躁的世界安安静静地敲代码
 author: uuxia
 language: cn
 timezone:
-#verifyPassword:6cf9d8a4f434262f7e0836d877608d48a6dcca8b681cf23ae1c3b93557fc3411
+verifyPassword:6cf9d8a4f434262f7e0836d877608d48a6dcca8b681cf23ae1c3b93557fc3411
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://uuxia.cn
