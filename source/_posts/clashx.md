@@ -9,7 +9,7 @@ cover: post/clashx/yuanyao.jpg
 feature: true
 ---
 
-### 规则解释
+### 一、规则解释
 
 * DOMAIN-SUFFIX：域名后缀匹配
 * DOMAIN：域名匹配
@@ -21,7 +21,7 @@ feature: true
 * SRC-PORT：源端口匹配
 * MATCH：全匹配（一般放在最后）
 
-### 基本配置
+### 二、基本配置
 
 :::tip
 Normal Tips Container
@@ -326,7 +326,7 @@ Normal Tips Container
       - MATCH,Proxy
 ```
 
-### 绕过系统代理
+### 三、绕过系统代理
 
 Clash for Windows在v 0.4.5 版本后可以自定义系统代理需要绕过的域名或IP
 
