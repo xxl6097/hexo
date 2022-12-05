@@ -25,18 +25,18 @@ https://www.test-ipv6.com/  
 
 光猫备份文件
 
-[光猫备份文件](hw_ctree.xml "光猫备份文件")
+[光猫备份文件](mao-config/hw_ctree.xml "光猫备份文件")
 
 
-[光猫配置文件](config.txt "光猫配置文件")
+[光猫配置文件](mao-config/config.txt "光猫配置文件")
 
 
 #### 光猫桥接截图
 
-![mao-001.png](mao-001.png)
+![mao-001.png](mao-config/mao-001.png)
 
 
-![mao-001.png](mao-002.png)
+![mao-001.png](mao-config/mao-002.png)
 
 
-![mao-001.png](mao-003.png)
+![mao-001.png](mao-config/mao-003.png)
