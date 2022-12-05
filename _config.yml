@@ -46,8 +46,8 @@ marked:
 relative_link: false
 future: true
 
-# encrypt:
-#   enable: true
+encrypt:
+  enable: true
 
 highlight:
   enable: false
@@ -119,8 +119,8 @@ category_generator:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#theme: raytaylorism
-theme: aurora
+theme: raytaylorism
+# theme: aurora
 # theme: hexo-theme-matery
 stylus:
   compress: true
