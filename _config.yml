@@ -46,8 +46,8 @@ marked:
 relative_link: false
 future: true
 
-encrypt:
-  enable: true
+# encrypt:
+#   enable: true
 
 highlight:
   enable: false
