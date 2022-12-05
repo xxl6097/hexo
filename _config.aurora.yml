@@ -23,8 +23,8 @@ site:
     number: '工业和信息化部备案管理系统网站 粤ICP备2022014941号-1'
     link: 'http://beian.miit.gov.cn'
   police_beian:
-    number: ''
-    link: ''
+    number: '粤ICP备2022014941号-1'
+    link: 'http://beian.miit.gov.cn'
 
 #! ---------------------------------------------------------------
 #! Authors Configs
