@@ -6,7 +6,7 @@ tags:
 categories:
   - linux
 
-cover: yuanyao.jpg
+cover: clashx/yuanyao.jpg
 feature: true
 ---
 
