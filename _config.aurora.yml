@@ -9,15 +9,16 @@
 #！ @docs https://aurora.tridiamond.tech/guide/configuration.html
 #! ---------------------------------------------------------------
 site:
-  subtitle: Aurora's Blog
-  author: Aurora
+  subtitle: uuxia's Blog
+  author: uuxia
   nick: Auroral UI
-  description: 一位正在重塑知识的技术人 <br /> @ <b>公众号：技术银河</b>
+  description: 一位正在重塑知识的技术人 <br /> @ <b>欢迎光临</b>
   link: '/'
   language: en
   multi_language: true
-  logo: https://img-blog.csdnimg.cn/20210313122054101.png
-  avatar: https://img-blog.csdnimg.cn/20210313122054101.png
+  favicon: /favicon.png
+  logo: /medias/logo.png
+  avatar: /medias/avatar.jpg
   beian:
     number: ''
     link: ''
