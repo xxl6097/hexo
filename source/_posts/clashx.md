@@ -8,6 +8,8 @@ categories:
 
 cover: post/clashx/yuanyao.jpg
 feature: true
+password: het002402
+message: 输入密码界面提示说明
 ---
 
 ### 规则解释
