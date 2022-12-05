@@ -2,7 +2,7 @@
 title: 家庭光猫配置
 date: 2022-11-24 20:07:17
 tags: [mao]
-password: 111
+password: 002402
 message: 输入密码界面提示说明
 categories:
 - [mao]
