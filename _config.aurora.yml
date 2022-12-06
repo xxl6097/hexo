@@ -57,18 +57,11 @@ menu:
   Archives: true
   # 一个 github 项目的外部链接
   projects:
-    name: '我的书签'
+    name: '书签'
     children:
-      Alist:
-        name: 'Alist'
-        path: 'uuxia.cn:5244'
       Showdoc:
         name: 'Showdoc'
-        path: 'z.uuxia.cn:82'
-  # 一个 github 项目的外部链接
-  projects:
-    name: 'Aurora'
-    children:
+        path: 'http://z.uuxia.cn:82'
       Alist:
         name: 'Alist'
         path: 'uuxia.cn:5244'
