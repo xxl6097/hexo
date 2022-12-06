@@ -2,6 +2,10 @@
 title: 家庭光猫配置
 date: 2022-11-24 20:07:17
 tags: [private]
+password: 000000
+abstract: 这是一篇加密博文，请输入密码后查看
+message: 这里需要密码才能访问。
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
 categories:
 - [mao]
 ---
