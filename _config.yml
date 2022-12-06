@@ -13,7 +13,7 @@ timezone:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://uuxia.cn
-root: /
+# root: /
 # permalink: /post/:title.html
 # permalink_defaults: 
 permalink: /post/:title.html
@@ -71,7 +71,7 @@ highlight:
   hljs: false
 prismjs:
   enable: true
-  preprocess: false
+  preprocess: true
   line_number: true
   tab_replace: ''
 
