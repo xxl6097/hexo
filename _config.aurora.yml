@@ -64,7 +64,7 @@ menu:
         path: 'http://z.uuxia.cn:82'
       Alist:
         name: 'Alist'
-        path: 'uuxia.cn:5244'
+        path: 'http://uuxia.cn:5244'
       obsidian:
         name: 'Aurora Blog'
         path: 'https://aurora.tridiamond.tech/'
