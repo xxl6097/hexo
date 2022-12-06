@@ -49,8 +49,7 @@ authors:
 #! Menu Configs
 #！ @docs https://aurora.tridiamond.tech/guide/menu.html
 #! ---------------------------------------------------------------
-encrypt:
-  enable: true
+
 menu:
   About: true
   Tags: true
