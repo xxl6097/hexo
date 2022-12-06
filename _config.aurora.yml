@@ -57,24 +57,27 @@ menu:
   Archives: true
   # 一个 github 项目的外部链接
   projects:
+    name: '我的书签'
+    children:
+      Alist:
+        name: 'Alist'
+        path: 'uuxia.cn:5244'
+      Showdoc:
+        name: 'Showdoc'
+        path: 'z.uuxia.cn:82'
+  # 一个 github 项目的外部链接
+  projects:
     name: 'Aurora'
     children:
+      Alist:
+        name: 'Alist'
+        path: 'uuxia.cn:5244'
       obsidian:
         name: 'Aurora Blog'
         path: 'https://aurora.tridiamond.tech/'
       Aurora:
         name: 'Aurora Github'
         path: 'https://github.com/auroral-ui/hexo-theme-aurora'
-  # 一个 github 项目的外部链接
-  projects:
-    name: '我的书签'
-    children:
-      obsidian:
-        name: 'Alist'
-        path: 'uuxia.cn:5244'
-      Aurora:
-        name: 'Showdoc'
-        path: 'z.uuxia.cn:82'
 
 #! ---------------------------------------------------------------
 #! Theme Config
