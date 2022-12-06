@@ -26,8 +26,8 @@ pretty_urls:
 
 
 # Security
-# encrypt:
-#   enable: true
+encrypt:
+  enable: true
   # silent: true
   # abstract: 这是一篇加密文章，需要密码才能继续阅读。
   # message: 当前文章暂不对外可见，请输入密码后查看！
