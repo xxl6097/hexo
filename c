@@ -12,16 +12,16 @@ function builds() {
   ./gitcommit.sh
 
   #sudo rm -rf ../xxl6097.github.io/*
-  echo "cp -r public/* ../xxl6097.github.io/"
-  cp -r public/* ../xxl6097.github.io/
-  echo "cp -r gitcommit.sh ../xxl6097.github.io/"
-  cp -r gitcommit.sh ../xxl6097.github.io/
+  echo "cp -r public/* ../blog/"
+  cp -r public/* ../blog/
+  echo "cp -r gitcommit.sh ../blog/"
+  cp -r gitcommit.sh ../blog/
 
-  echo "cp -r /root/wechat-cloud/we-api/src/main/resources/web ../xxl6097.github.io/"
-  cp -r /root/wechat-cloud/we-api/src/main/resources/admin ../xxl6097.github.io/
+  #echo "cp -r /root/wechat-cloud/we-api/src/main/resources/web ../xxl6097.github.io/"
+  #cp -r /root/wechat-cloud/we-api/src/main/resources/admin ../xxl6097.github.io/
 
-  echo "cd ../xxl6097.github.io/"
-  cd ../xxl6097.github.io/
+  echo "cd ../blog/"
+  cd ../blog/
 
   chmod +x gitcommit.sh
   echo "./gitcommit.sh"
